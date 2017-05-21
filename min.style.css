@@ -26,3 +26,41 @@ a {
 a:hover {
     color: black;
 }
+footer {
+    width: 100%;
+    height: 400px;
+    background: #4a4a4a;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+footer:hover img {
+    transform: scale(1.1) translateX(3%);
+    opacity: 1;
+}
+footer > img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    transform: scale(1) translateX(0%);
+    opacity: 0.5;
+}
+footer > .icons {
+    width: 50%;
+    height: 50px;
+/*    background: white;*/
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    list-style: none;
+}
+footer > .icons > li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    text-shadow: 1px 2px 4px white;
+}
