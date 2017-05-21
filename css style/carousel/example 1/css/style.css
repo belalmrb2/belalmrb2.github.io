@@ -1,0 +1,841 @@
+.cover {
+  width: 280px;
+  height: 535px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  position: relative;
+  top: 50%;
+  left: 5%;
+  transform: skew(-20deg) translate(-5%, -50%);
+  background: black;
+  -webkit-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+  -o-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+  box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+} 
+.cover-in {
+  width: 278px;
+  height: 532px;
+/*  border: 2px solid rgba(255, 255, 255, .5);*/
+  border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+}
+.tache{
+  width: 250px;
+  height: 450px;
+/*  border: 1px solid black;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+/*  background: url('image/background-image-for-tach.jpg');*/
+  background-size: cover;
+  -webkit-animation: background 10s linear infinite;
+  -moz-animation: background 10s linear infinite;
+  -o-animation: background 10s linear infinite;
+  animation: background 10s linear infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+/*    background: #fff;*/
+}
+@keyframes background {
+    0%   { background: url('../image/bg-1.jpg');background-size: cover; }
+    50%  { background: url('../image/bg-2.jpg');background-size: cover; }
+    100% { background: url('../image/bg-3.jpg');background-size: cover; }
+}
+@-webkit-keyframes background {
+    0%   { background: url('../image/bg-1.jpg');background-size: cover; }
+    50%  { background: url('../image/bg-2.jpg');background-size: cover; }
+    100% { background: url('../image/bg-3.jpg');background-size: cover; }
+}
+@-moz-keyframes background {
+    0%   { background: url('../image/bg-1.jpg');background-size: cover; }
+    50%  { background: url('../image/bg-2.jpg');background-size: cover; }
+    100% { background: url('../image/bg-3.jpg');background-size: cover; }
+}
+@-ms-keyframes background {
+    0%   { background: url('../image/bg-1.jpg');background-size: cover; }
+    50%  { background: url('../image/bg-2.jpg');background-size: cover; }
+    100% { background: url('../image/bg-3.jpg');background-size: cover; }
+}
+@-o-keyframes background {
+    0%   { background: url('../image/bg-1.jpg');background-size: cover; }
+    50%  { background: url('../image/bg-2.jpg');background-size: cover; }
+    100% { background: url('../image/bg-3.jpg');background-size: cover; }
+}
+.camerra-iphone {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 20px 40px -20px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0 20px 40px -20px rgba(0,0,0,1);
+    -ms-box-shadow: inset 0 20px 40px -20px rgba(0,0,0,1);
+    -o-box-shadow: inset 0 20px 40px -20px rgba(0,0,0,1);
+    box-shadow: inset 0 20px 40px -20px rgba(0,0,0,1);
+    background-image: radial-gradient(circle 248px at center, #1a46ac 0%, #3d77b6 47%, #0e1729 100%); 
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    opacity: .9;
+    -webkit-transform: translate(-18%, -3%);
+    -moz-transform: translate(-18%, -3%);
+    -ms-transform: translate(-18%, -3%);
+    -o-transform: translate(-18%, -3%);
+   transform: translate(-18%, -3%);
+/*    transform: translate(-18%, -3%);*/
+}
+.speaker-iphone {
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -3%);
+    -moz-transform: translate(-50%, -3%);
+    -ms-transform: translate(-50%, -3%);
+    -o-transform: translate(-50%, -3%);
+/*    transform: translate(-50%, -3%);*/
+    background: #242424; 
+} 
+.bottom-voice-iphone {
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    background: #000;
+    top: 8%;
+    right: 100%;
+}
+.Positive-voice-iphone {
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    right: 100%;
+    top: 15%;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.Positive-voice-iphone span {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    background: rgba(0,0,0,0.1);
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0;
+    -webkit-transition: left .3s ease;
+    -moz-transition: left .3s ease;
+    -ms-transition: left .3s ease;
+    -o-transition: left .3s ease;
+    transition: left .3s ease;
+}
+.Positive-voice-iphone:hover  span{
+    left: -38px;
+}
+.Negative-voice-iphone {
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    right: 100%;
+    top: 21%;
+    background: #000;
+    cursor: pointer;
+}
+.Negative-voice-iphone span {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    text-align: center; 
+    background: rgba(0,0,0,0.1);
+    font-size: 25px;
+    line-height: 23px;
+    margin: 0;-webkit-transition: left .3s ease;
+    -moz-transition: left .3s ease;
+    -ms-transition: left .3s ease;
+    -o-transition: left .3s ease;
+    transition: left .3s ease;
+/*    transition: left .3s ease;*/
+}
+.Negative-voice-iphone:hover  span{
+    left: -38px;
+}
+.buttom-between-iphone {
+    width: 38px;
+    height: 38px;
+    border: 2px solid rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 1px 1px 10px 1px  #4a4a4a;
+	-moz-box-shadow: inset 1px 1px 10px 1px  #4a4a4a;
+	-ms-box-shadow: inset 1px 1px 10px 1px  #4a4a4a;
+	-o-box-shadow: inset 1px 1px 10px 1px  #4a4a4a;
+	box-shadow: inset 1px 1px 10px 1px  #4a4a4a;
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+    position: absolute;
+    top: 92.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+    cursor: pointer;
+    -webkit-transition: box-shadow 3s ease;
+	-moz-transition: box-shadow 3s ease;
+	-ms-transition: box-shadow 3s ease;
+	-o-transition: box-shadow 3s ease;
+	transition: box-shadow 3s ease;
+}
+.buttom-between-iphone:hover {
+    -webkit-box-shadow: inset 1px 1px 10px 1px  #fff;
+	-moz-box-shadow: inset 1px 1px 10px 1px  #fff;
+	-ms-box-shadow: inset 1px 1px 10px 1px  #fff;
+	-o-box-shadow: inset 1px 1px 10px 1px  #fff;
+	box-shadow: inset 1px 1px 10px 1px  #fff;
+}
+.bottom-lock-iphone {
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    top: 18%;
+    left: 100%;
+    background: #000;
+    cursor: pointer;
+}
+.bottom-lock-iphone span {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    left: -40px;
+    text-align: center; 
+    background: rgba(0,0,0,0.1);
+    font-size: 25px;
+    line-height: 23px;
+    margin: 0;
+    -webkit-transition: left .3s ease;
+    -moz-transition: left .3s ease;
+    -ms-transition: left .3s ease;
+    -o-transition: left .3s ease;
+    transition: left .3s ease;
+}
+.bottom-lock-iphone:hover  span{
+    left: 0px;
+}
+
+/* --============================== switch lock style  ===================================-- */
+.switch-lock {
+  top: -20%;
+  right: 70px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  -webkit-transition: .4s linear;
+  -moz-transition: .4s linear;
+  -ms-transition: .4s linear;
+  -o-transition: .4s linear;
+  transition: .4s linear;
+}
+.bottom-lock-iphone:hover .switch-lock {
+    right: -2px;
+}
+.switch-lock input { display: none;}
+
+.slider-lock {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+.slider-lock:before {
+  position: absolute;
+  font-size: 20px;
+  content: '\f3b5';
+  font-family: Ionicons;
+  text-align: center;
+  line-height: 26px;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+input:checked + .slider-lock {
+  background: yellowgreen;
+}
+input:focus + .slider-lock {
+	-webkit-box-shadow: 0 20px 40px -20px #000;
+	-moz-box-shadow: 0 20px 40px -20px #000;
+	-ms-box-shadow: 0 20px 40px -20px #000;
+	-o-box-shadow: 0 20px 40px -20px #000;
+	box-shadow: 0 20px 40px -20px #000;
+
+}
+input:checked + .slider-lock:before{
+  -webkit-transform: translateX(26px);
+  -moz-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  -o-transform: translateX(26px);
+  transform: translateX(26px);
+  content: '\f392';
+  font-family: Ionicons;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+}
+.slider-lock.round {
+	-webkit-border-radius: 34px;
+	-moz-border-radius: 34px;
+	-ms-border-radius: 34px;
+	-o-border-radius: 34px;
+	border-radius: 34px;
+}
+
+.slider-lock.round:before {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+
+}
+/* --============================== switch voice style  ===================================-- */
+
+.switch-voice {
+  top: -25%;
+  right: -20px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.bottom-voice-iphone:hover .switch-voice {
+    right: 65px;
+}
+.switch-voice input { display: none;}
+.slider-voice {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  transition: .4s ease;
+}
+.slider-voice:before {
+  position: absolute;
+  font-size: 20px;
+  content: '\f3ba';
+  font-family: Ionicons;
+  text-align: center;
+  line-height: 26px;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+input:checked + .slider-voice {
+  background: yellowgreen;
+}
+input:focus + .slider-voice {
+	-webkit-box-shadow: 0 20px 40px -20px #000;
+	-moz-box-shadow: 0 20px 40px -20px #000;
+	-ms-box-shadow: 0 20px 40px -20px #000;
+	-o-box-shadow: 0 20px 40px -20px #000;
+	box-shadow: 0 20px 40px -20px #000;
+}
+input:checked + .slider-voice:before{
+  -webkit-transform: translateX(26px);
+  -moz-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  -o-transform: translateX(26px);
+  transform: translateX(26px);
+  content: '\f3b9';
+  font-family: 'Ionicons';
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+}
+.slider-voice.round {
+	-webkit-border-radius: 34px;
+	-moz-border-radius: 34px;
+	-ms-border-radius: 34px;
+	-o-border-radius: 34px;
+	border-radius: 34px;
+}
+
+.slider-voice.round:before {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.tache header {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background: none;
+}
+/* --==============================  style for bettrey  ===================================-- */
+.Battery {
+  width: 20px;
+  height: 10px;
+  border: 1px solid #4a4a4a;
+  position: absolute;
+  top: 50%;
+  left: 96%;
+  -webkit-transform: translate(-96%, -50%);
+  -moz-transform: translate(-96%, -50%);
+  -ms-transform: translate(-96%, -50%);
+  -o-transform: translate(-96%, -50%);
+  transform: translate(-96%, -50%);
+  margin: 0;
+  padding: 0;
+}
+.Battery .animation {
+  background: red;
+  width: 0;
+  height: 100%;
+  -webkit-animation: battrey 5s linear infinite;
+  -moz-animation: battrey 5s linear infinite;
+  -ms-animation: battrey 5s linear infinite;
+  -o-animation: battrey 5s linear infinite;
+  animation: battrey 5s linear infinite;
+}
+@keyframes battrey {
+  0%   { width: 0;    background: red;}
+  50%  { width: 50%;  background: black;}
+  100% { width: 100%; background: #42f44e;}
+}
+@-webkit-keyframes battrey {
+  0%   { width: 0;    background: red;}
+  50%  { width: 50%;  background: black;}
+  100% { width: 100%; background: #42f44e;}
+}
+@-moz-keyframes battrey {
+  0%   { width: 0;    background: red;}
+  50%  { width: 50%;  background: black;}
+  100% { width: 100%; background: #42f44e;}
+}
+@-ms-keyframes battrey {
+  0%   { width: 0;    background: red;}
+  50%  { width: 50%;  background: black;}
+  100% { width: 100%; background: #42f44e;}
+}
+@-o-keyframes battrey {
+  0%   { width: 0;    background: red;}
+  50%  { width: 50%;  background: black;}
+  100% { width: 100%; background: #42f44e;}
+}
+.Battery span {
+  width: 15%;
+  height: 50%;
+  position: absolute; 
+  border-top: 1px solid #4a4a4a;
+  border-bottom: 1px solid #4a4a4a;
+  border-right: 1px solid #4a4a4a;
+  left: 100%;
+  top: 13%;
+  margin: 0;
+  padding: 0;
+} 
+/* --==============================  end style  ===================================-- */
+/* --==============================  style for antenna  ===================================-- */
+.antenna {
+  width: 40px;
+  height: 10px;
+/*   border: 1px solid #000; */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.antenna span {
+  position:absolute;
+  width: 18%;
+  height: 98%;
+  border-radius: 50%;
+/*   background: #ddd; */
+  border: .5px solid #000;
+  -webkit-animation: antenna 5s linear infinite;
+  -moz-animation: antenna 5s linear infinite;
+  -ms-animation: antenna 5s linear infinite;
+  -o-animation: antenna 5s linear infinite;
+  animation: antenna 5s linear infinite;
+} 
+.antenna span:nth-child(1) {
+  left: 0;
+}
+.antenna span:nth-child(2) {
+  left: 26%;
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -ms-animation-delay: .3s;
+  -o-animation-delay: .3s;
+  animation-delay: .3s;
+}
+ .antenna span:nth-child(3) {
+  left: 52%;
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -ms-animation-delay: .6s;
+  -o-animation-delay: .6s;
+  animation-delay: .6s;
+}
+.antenna span:nth-child(4) {
+  left: 78%;
+  -webkit-animation-delay: .9s;
+  -moz-animation-delay: .9s;
+  -ms-animation-delay: .9s;
+  -o-animation-delay: .9s;
+  animation-delay: .9s;
+}
+@keyframes antenna {
+  0%, 100% { background: none;}
+  50%      { background: #ddd;}
+}
+@-webkit-keyframes antenna {
+  0%, 100% { background: none;}
+  50%      { background: #ddd;}
+}
+@-moz-keyframes antenna {
+  0%, 100% { background: none;}
+  50%      { background: #ddd;}
+}
+@-ms-keyframes antenna {
+  0%, 100% { background: none;}
+  50%      { background: #ddd;}
+}
+@-o-keyframes antenna {
+  0%, 100% { background: none;}
+  50%      { background: #ddd;}
+}
+/* --==============================  end style for antenna  ===================================-- */
+/* --==============================  style for wi-fi  ===================================-- */
+.wifi {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-20%, -50%);
+  -moz-transform: translate(-20%, -50%);
+  -ms-transform: translate(-20%, -50%);
+  -o-transform: translate(-20%, -50%);
+  transform: translate(-20%, -50%);
+  width: 20px;
+  height: 10px;
+/*   border: 1px solid red; */
+}
+.wifi span {
+  position: absolute;
+}
+.wifi span:nth-child(1) {
+  padding: 6px;
+  border: 1px solid transparent;
+  border-top: 1px solid black; 
+  top : 120%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: wifi 3s linear .9s infinite; 
+  -moz-animation: wifi 3s linear .9s infinite; 
+  -ms-animation: wifi 3s linear .9s infinite; 
+  -o-animation: wifi 3s linear .9s infinite; 
+  animation: wifi 3s linear .9s infinite; 
+}
+.wifi span:nth-child(2) {
+  padding: 4px;
+  border: 1px solid transparent;
+  border-top: 1px solid black; 
+  top : 110%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: wifi 3s linear .6s infinite; 
+  -moz-animation: wifi 3s linear .6s infinite; 
+  -ms-animation: wifi 3s linear .6s infinite; 
+  -o-animation: wifi 3s linear .6s infinite; 
+  animation: wifi 3s linear .6s infinite; 
+}
+.wifi span:nth-child(3) {
+  padding: 2px;
+  border: 1px solid transparent;
+  border-top: 1px solid black;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: wifi 3s linear .3s infinite; 
+  -moz-animation: wifi 3s linear .3s infinite; 
+  -ms-animation: wifi 3s linear .3s infinite; 
+  -o-animation: wifi 3s linear .3s infinite; 
+  animation: wifi 3s linear .3s infinite;  
+}
+.wifi span:nth-child(4) {
+  width: 2px;
+  height: 2px;
+  border-top: 1px solid black;
+/*   padding: 4px; */
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: wifi 3s linear infinite; 
+  -moz-animation: wifi 3s linear infinite; 
+  -ms-animation: wifi 3s linear infinite; 
+  -o-animation: wifi 3s linear infinite; 
+  animation: wifi 3s linear infinite;
+}
+@keyframes wifi {
+  0%, 100% { border-top-color: black;}
+  50%      { border-top-color: #fff; }
+}
+@-webkit-keyframes wifi {
+  0%, 100% { border-top-color: black;}
+  50%      { border-top-color: #fff; }
+}
+@-moz-keyframes wifi {
+  0%, 100% { border-top-color: black;}
+  50%      { border-top-color: #fff; }
+}
+@-ms-keyframes wifi {
+  0%, 100% { border-top-color: black;}
+  50%      { border-top-color: #fff; }
+}
+@-o-keyframes wifi {
+  0%, 100% { border-top-color: black;}
+  50%      { border-top-color: #fff; }
+}
+/* --======================== style for timer =======================-- */
+.timer {
+  width: 50px;
+  height: 10px;
+  color: white;
+  font-size: 9px;
+  text-align: center;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* --======================== end style for timer ====================-- */ 
+footer {
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+/* --================= style for between ============--*/
+.between {
+    width: 100%;
+    height: 83%;
+    top: 5%;
+    position: absolute;
+/*    background: greenyellow;*/
+}
+/* style for ul in betwenn or icons for tache on */
+/*    mail*/
+#mail {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+/*    calender*/
+#calendar {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+}
+/*    photos*/
+#photos {
+    position: absolute;
+    top: 2%;
+    left: 55%
+}
+/*    camera*/
+#camera {
+    position: absolute;
+    top: 2%;
+    left: 80%;
+}
+/*    maps*/
+#maps {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+}
+/*    clock*/
+#clock {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+}
+
+#weather {
+    position: absolute;
+    top: 18%;
+    left: 55%;
+}
+
+#info {
+    position: absolute;
+    top: 18%;
+    left: 80%;
+    background: white;
+}
+
+#passbook {
+    position: absolute;
+    top: 34%;
+    left: 5%;
+}
+        /*
+    #stocks{
+        position: absolute;
+        top: 27%;
+        left: %;
+    }
+*/
+        
+#notes {
+    position: absolute;
+    top: 34%;
+    left: 30%;
+}
+
+#info-2 {
+    position: absolute;
+    top: 34%;
+    left: 55%;
+    background: white;
+}
+
+#stocks {
+    position: absolute;
+    top: 34%;
+    left: 80%;
+}
+
+#videos {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+/*
+#info-3 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    background: white;
+}
+*/
+
+#music {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+#app {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.setting {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+ul li {
+    list-style-type: none;
+}

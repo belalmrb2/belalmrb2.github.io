@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+.container {
+    width: 100%;
+    background: white;
+}
+.iphone {
+    width: 50%;
+    height: 600px;
+    background: #f00;
+    float: left;
+}
+.text {
+    width: 70%;
+    height: 600px;
+    background: #ff0;
+    float: right;
+}
+.text:hover .iphone {
+    background: white
+}

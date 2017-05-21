@@ -1,0 +1,55 @@
+body {
+    background: greenyellow;
+    margin: 0;
+}
+.container {
+    width: 400px;
+    height: 400px;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.2);
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+ul li{
+    float: left;
+    padding: 20px;
+    background: #262626;
+}
+ul li a {
+    padding: 20px;
+/*    background: rgba(255, 245, 0, 0.72);*/
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 1;
+    transition: color .5s;
+}
+ul li a:hover {
+    color: #ff0;
+}
+ul li a:before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.42);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transition: width .5s, left .5s;
+}
+ul li a:hover:before {
+    left: 0;
+    width: 100%;
+}

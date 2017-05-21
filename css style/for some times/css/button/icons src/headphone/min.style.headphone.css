@@ -1,0 +1,557 @@
+body {
+    background: deepskyblue;
+}
+.box {
+    width: 20%;
+    height: 50px;
+    padding: 22px;
+    margin: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+/*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+*/
+    -webkit-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -o-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+}
+/*--=====================================================--*/
+/*
+    Style for button exampel 
+            <div class="btn btn-red-headphone">
+                <i class="ion-headphone-round"></i>
+                <span>some text</span>
+            </div>
+*/
+/*--=====================================================--*/
+.btn-i {
+    position: absolute;
+    text-align: center;
+/*    display: block;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 50px;
+    width: 175px;
+    height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background: none;
+    overflow: hidden;
+}
+/*    shadow for text in btn*/
+
+/*--=====================================================--*/
+.btn-red-headphone {
+    border-color: red;
+}
+.btn-red-headphone i, .btn-red-headphone span {
+    position: absolute;
+    color: red;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-red-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-red-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-red-headphone:hover i {
+    top: 0;
+}
+.btn-red-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-blue-headphone {
+    border-color: #3498db;
+}
+.btn-blue-headphone i, .btn-blue-headphone span {
+    position: absolute;
+    color: #3498db;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-blue-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-blue-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-blue-headphone:hover i {
+    top: 0;
+}
+.btn-blue-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-green-headphone {
+    border-color: #1abc9c;
+}
+.btn-green-headphone i, .btn-green-headphone span {
+    position: absolute;
+    color: #1abc9c;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-green-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-green-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-green-headphone:hover i {
+    top: 0;
+}
+.btn-green-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-orange-headphone {
+    border-color: #f1c40f;
+}
+.btn-orange-headphone i, .btn-orange-headphone span {
+    position: absolute;
+    color: #f1c40f;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-orange-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-orange-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-orange-headphone:hover i {
+    top: 0;
+}
+.btn-orange-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-violet-headphone {
+    border-color: #9b59b6;
+}
+.btn-violet-headphone i, .btn-violet-headphone span {
+    position: absolute;
+    color: #9b59b6;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-violet-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-violet-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-violet-headphone:hover i {
+    top: 0;
+}
+.btn-violet-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-grey-headphone {
+    border-color: #95a5a6;
+}
+.btn-grey-headphone i, .btn-grey-headphone span {
+    position: absolute;
+    color: #95a5a6;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-grey-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-grey-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-grey-headphone:hover i {
+    top: 0;
+}
+.btn-grey-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-alizarin-headphone {
+    border-color: #e74c3c;
+}
+.btn-alizarin-headphone i, .btn-alizarin-headphone span {
+    position: absolute;
+    color: #e74c3c;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-alizarin-headphone i {
+    position: absolute;
+    font-size: 30px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-alizarin-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-alizarin-headphone:hover i {
+    top: 0;
+}
+.btn-alizarin-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-emerald-headphone {
+    border-color: #2ecc71;
+}
+.btn-emerald-headphone i, .btn-emerald-headphone span {
+    position: absolute;
+    color: #2ecc71;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-emerald-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-emerald-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-emerald-headphone:hover i {
+    top: 0;
+}
+.btn-emerald-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-EE7738-headphone {
+    border-color: #EE7738;
+}
+.btn-EE7738-headphone i, .btn-EE7738-headphone span {
+    position: absolute;
+    color: #EE7738;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-EE7738-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-EE7738-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-EE7738-headphone:hover i {
+    top: 0;
+}
+.btn-EE7738-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-3BB4C1-headphone {
+    border-color: #3BB4C1;
+}
+.btn-3BB4C1-headphone i, .btn-3BB4C1-headphone span {
+    position: absolute;
+    color: #3BB4C1;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-3BB4C1-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-3BB4C1-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-3BB4C1-headphone:hover i {
+    top: 0;
+}
+.btn-3BB4C1-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-FFDD67-headphone {
+    border-color: #FFDD67;
+}
+.btn-FFDD67-headphone i, .btn-FFDD67-headphone span {
+    position: absolute;
+    color: #FFDD67;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-FFDD67-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-FFDD67-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-FFDD67-headphone:hover i {
+    top: 0;
+}
+.btn-FFDD67-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-ecf0f1-headphone {
+    border-color: #ecf0f1;
+}
+.btn-ecf0f1-headphone i, .btn-ecf0f1-headphone span {
+    position: absolute;
+    color: #ecf0f1;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-ecf0f1-headphone i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-ecf0f1-headphone span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-ecf0f1-headphone:hover i {
+    top: 0;
+}
+.btn-ecf0f1-headphone:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/

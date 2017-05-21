@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <script type="text/javascript" src="js/typed.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.type-text', {
+        strings: ["copyright", "by", "belal.afghan", "welcome in", "peace-web", "or", "peace in war..."],
+        typeSpeed: 30,
+        backDelay: 500,
+        loop: false
+      });
+  });
+  //    for timer in header class tache
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("timer-js").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</head>
+<body>
+    <div class="container">
+      <div class="cover">
+          <div class="bottom-lock-iphone">
+            <label class="switch-lock">
+                <input type="checkbox">
+                <div class="slider-lock round"></div>
+            </label>
+          </div>
+          <div class="bottom-voice-iphone">
+            <label class="switch-voice">
+                <input type="checkbox">
+                <div class="slider-voice round"></div>
+            </label>
+          </div>
+          <div class="Positive-voice-iphone">
+            <span><i class="ion-plus-round"></i></span>
+          </div>
+          <div class="Negative-voice-iphone">
+            <span><i class="ion-minus-round"></i></span>
+          </div>
+        <div class="cover-in">
+            <div class="camerra-iphone"></div>
+            <div class="speaker-iphone"></div>
+            <a href="../../../../index.html"><div class="buttom-between-iphone"></div></a>
+          <div class="tache">
+            <header>
+<!--                    battrey-->
+                <div class="Battery">
+                    <div class="animation"></div>
+                    <span></span>
+                </div>
+<!--                    antenna-->
+                <div class="antenna">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+<!--                    Wi-Fi-->
+                <div class="wifi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+<!--                    timer-->
+                <div class="timer">
+                    <span id="timer-js"></span>
+                </div>
+            </header>
+              <div class="between">
+                  <div class="header">
+                    <div class="type-text"></div>
+                  </div>
+                  <div class="login-form">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Email" id="UserName">
+                      <i class="fa fa-user"></i>
+                    </div>
+                    <div class="form-group log-status">
+                      <input type="password" class="form-control" placeholder="Password" id="Passwod">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <a class="link" href="#">Lost your password?</a>
+                    <button type="button" class="btn btn-login">Log in</button>
+                  </div> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow-iphone"></div>
+    </div>
+<script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+#gallery-example{
+    position: absolute;
+    height: 114.5%;
+    width: 100%;
+}
+.gallery-example img{
+    margin-left: 5%;
+    padding: 2px
+}
+.wrapper {
+    transform: rotate(90deg);
+    cursor: pointer;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform 375ms, width 275ms 100ms, height 375ms;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper.open {
+    width: 330px;
+    height: 330px;
+    transition: transform 375ms, width 375ms, height 275ms 100ms;
+}
+
+.wrapper.open .content {
+    transform: scale(1);
+}
+.column-example {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal-example {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  height: 100vh;
+}
+/* Modal Content */
+.modal-content-example {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.myBox {
+    display: none;
+}
+.modal-content > myBox > .title {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 100%;
+    -webkit-border-top-left-radius: 2px;
+    -moz-border-top-left-radius: 2px;
+    -o-border-top-left-radius: 2px;
+    border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-top-right-radius: 2px;
+    -o-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+    background: #d4d4d4;
+}
+.modal-content > .myBox > .title {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: .8%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.modal-content > .myBox > .title span:nth-child(1) {
+    background: #fd5d50;
+    left: 8px;
+}
+.modal-content > .myBox > .title span:nth-child(1):hover {
+    background: #ff3626;
+}
+.modal-content > .myBox > .title span:nth-child(2) {
+    background: #fbd376;
+    left: 31px;
+}
+.modal-content > .myBox > .title span:nth-child(2):hover {
+    background: #ffca4f;
+}
+.modal-content > .myBox > .title span:nth-child(3) {
+    background: #b2de88;
+    left: 54px;
+}
+.modal-content > .myBox > .title span:nth-child(3):hover {
+    background: #86c946;
+}
+/* Next & previous buttons */
+.btn-prev-example,
+.btn-next-example {
+  width: 106px;
+  height: 45px;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px -20px rgba(0,0,0,.1);
+  position: absolute;
+  top: 47%;
+  text-align: center;
+  line-height: 44px;
+  border: 2px solid red;
+  color: red;
+  text-shadow: 1px 2px 4px;
+  cursor: pointer;
+   overflow :hidden; 
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+.btn-next-example {
+    right: 0;
+}
+/* --============= NEXT BOTTON ====================--*/
+.btn-next-example span, btn-next-example i {
+  position: absolute;
+  transform: translate( -50%);
+  -webkit-transform: translate(-50%);
+}
+.btn-next-example span {
+  left: 50%;
+  transition: left .5s ease;
+}
+.btn-next-example:hover span {
+  left: 150%;
+}
+.btn-next-example i {
+  position: absolute;
+  right: 150%;
+  transition: right .5s ease;
+  
+}
+.btn-next-example:hover i {
+  right: 45%;
+  animation: next 1s linear .5s infinite;
+}
+@keyframes next{
+  0%   { right: 40%;}
+  50%  { right: 45%;}
+  100% { right: 40%;}
+}
+/* --===============BACK BOTTON ==================--*/
+.btn-prev span, btn-prev i {
+  position: absolute;
+  transform: translate( -50%);
+  -webkit-transform: translate(-50%);
+}
+.btn-prev-example span {
+  left: 50%;
+  transition: left .5s ease;
+}
+.btn-prev-example:hover span {
+  left: -50%;
+}
+.btn-prev-example i {
+  position: absolute;
+  left: 150%;
+  transition: left .5s ease;
+  
+}
+.btn-prev-example:hover i {
+  left: 45%;
+  animation: prev 1s linear .5s infinite;
+}
+@keyframes prev{
+  0%   { left: 40%;}
+  50%  { left: 45%;}
+  100% { left: 40%;}
+}
+/* --=================================--*/
+/* Number text (1/3 etc) */
+.numbertext-example {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/*    finshe*/
+img.hover-shadow {
+    transition: 0.3s;
+    cursor: pointer;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.btn-download-example{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    color: #fff;
+    font-family: verdana;
+    width: 200px;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-download-example:after{
+    content: '';
+    width: 0;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    transform: skewX(15deg);
+/*    background: #f7f7f7;*/
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    z-index: -1;
+    transition: .5s;
+}
+.btn-download-example:hover{
+    cursor: pointer;
+    color: #fff;    
+}
+.btn-download-example:hover:after {
+    left: -10%;
+    width: 120%;
+}

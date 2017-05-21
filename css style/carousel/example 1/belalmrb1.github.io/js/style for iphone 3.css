@@ -1,0 +1,137 @@
+.iphone-3 {
+    width: 300px;
+    height: 535px;
+    background-image: url('../img/background-for-iphone-3.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 100%;
+    z-index: 1;
+}
+
+#mail-2 {
+    position: absolute;
+    top: 17%;
+    left: 19%;
+}
+
+#calendar-2 {
+    position: absolute;
+    top: 17%;
+    left: 36%;
+}
+
+#photos-2 {
+    position: absolute;
+    top: 17%;
+    left: 53%
+}
+
+#camera-2 {
+    position: absolute;
+    top: 17%;
+    left: 70%;
+}
+
+#maps-2 {
+    position: absolute;
+    top: 27%;
+    left: 19%;
+}
+
+#clock-2 {
+    position: absolute;
+    top: 27%;
+    left: 36%;
+}
+
+#weather-2 {
+    position: absolute;
+    top: 27%;
+    left: 53%;
+}
+
+#info-2-2-2 {
+    position: absolute;
+    top: 27%;
+    left: 70%;
+}
+
+#passbook-2 {
+    position: absolute;
+    top: 37%;
+    left: 19%;
+}
+        /*
+    #stocks{
+        position: absolute;
+        top: 27%;
+        left: %;
+    }
+*/
+        
+#notes-2 {
+    position: absolute;
+    top: 37%;
+    left: 36%;
+}
+
+#info-2-2 {
+    position: absolute;
+    top: 37%;
+    left: 53%;
+}
+
+#stocks-2 {
+    position: absolute;
+    top: 37%;
+    left: 70%;
+}
+
+#videos-2 {
+    position: absolute;
+    top: 47%;
+    left: 19%;
+}
+
+#info-3-2 {
+    position: absolute;
+    top: 47%;
+    left: 36%;
+}
+
+#music-2 {
+    position: absolute;
+    top: 47%;
+    left: 53%;
+}
+
+#app-2 {
+    position: absolute;
+    top: 47%;
+    left: 70%;
+}
+
+#setting-2 {
+    position: absolute;
+    top: 57%;
+    left: 53%;
+}
+
+ul > li {
+    list-style-type: none;
+}
+/* This is style for botton between and close or back going*/
+.container-2 > .close-2{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 87%;
+    left: 44%;
+    cursor: pointer;
+}

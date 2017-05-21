@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="min.style.css">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="container.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style type="text/css">
+        .btn-download {
+            top: 55%;
+            right: 92%;
+            transform: translateX(-50%) scale(0);
+            transition: all .5s ease;
+        }
+        .container:hover .btn-download,
+        .container-a:hover .btn-download,
+        .container-b:hover .btn-download,
+        .container-c:hover .btn-download,
+        .container-d:hover .btn-download
+        {
+            transform: scale(1);
+            top: 55%;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <div class="container mySlides animation">
+            <p class="text">in the name of (ALLAH) most gracious most merciful</p>
+            <div class="class">Container</div>
+            <div class="btn-download s">
+                <i class="ion-code-download"></i>
+                <span>Download</span>
+            </div>
+        </div>
+        <div class="container-a mySlides animation">
+            <p class="text">in the name of (ALLAH) most gracious most merciful</p>
+            <div class="class">Container-a</div>
+            <div class="btn-download">
+                <i class="ion-code-download"></i>
+                <span>Download</span>
+            </div>
+        </div>
+        <div class="container-b mySlides animation">
+            <p class="text">in the name of (ALLAH) most gracious most merciful</p>
+            <div class="class">Container-b</div>
+            <div class="btn-download">
+                <i class="ion-code-download"></i>
+                <span>Download</span>
+            </div>
+        </div>
+        <div class="container-c mySlides animation">
+            <p class="text">in the name of (ALLAH) most gracious most merciful</p>
+            <div class="class">Container-c</div>
+            <div class="btn-download">
+                <i class="ion-code-download"></i>
+                <span>Download</span>
+            </div>
+        </div>
+        <div class="container-d mySlides animation">
+            <p class="text">in the name of (ALLAH)</p>
+            <div class="class">Container-d</div>
+            <div class="btn-download">
+                <i class="ion-code-download"></i>
+                <span>Download</span>
+            </div>
+        </div>
+        <div class="container-e mySlides animation">
+            <p class="text">(ALLAH)</p>
+            <div class="class" style="font-size: 17.0px;">Container-e</div>
+        </div>
+<!--            button next and previous-->
+        <div class="btn btn-prev" onclick="plusSlides(-1)"><i class="ion-android-arrow-back move-left" style="padding-right: 25px;"> </i>Previous</div>
+        <div class="btn btn-next" onclick="plusSlides(1)">Next <i class="ion-arrow-right-c move-right" style="padding-left: 25px;"></i></div>
+    </div>
+<footer>
+    <p>Copyright&copy; 2017 by <a href="">Belal.afghan</a></p>
+</footer>    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+<!--    jquery for download-->
+<script>
+$(function() {
+  $('.example').click(function() {
+      $('.example').each(function() {});
+      	$(this).toggleClass('testbin');    
+  });
+});
+</script>
+</body>
+</html>

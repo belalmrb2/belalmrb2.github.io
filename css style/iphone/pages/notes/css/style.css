@@ -1,0 +1,32 @@
+body{
+    background: #eee;
+}
+.container{
+    width: 300px;
+    height: 535px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url('../imags/f.png');
+    background-size: 100%;
+    z-index: 1;
+}
+.container-in{
+    background: #fff;
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    width: 72%;
+    height: 70%;
+    border: 1px solid black;
+    border-top-color: aliceblue;
+}
+
+.pen .title{
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid #9fe99b;
+    color: #000000;
+    text-shadow: 0 2px 4px #ddd;
+}

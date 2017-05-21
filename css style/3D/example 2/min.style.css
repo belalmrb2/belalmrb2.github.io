@@ -1,0 +1,45 @@
+body {
+    background: deepskyblue;
+    margin: 0;
+    color: #3d3d3d;
+    font: 1em/2em sans-serif;
+}
+.container {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+/*    overflow: hidden;*/
+    cursor: pointer;
+}
+.container:hover .image {
+    transform: rotateY(180deg);
+}
+.image {
+    position: relative;
+    transition: .5s;
+    transform-style: preserve-3d;
+}
+img {
+    vertical-align: middle;
+}
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background: #d9f3ff;
+}
+img, .text {
+    border: 4px double #ccc;
+    width: 300px;
+    height: 400px;
+    backface-visibility: hidden;
+}
+.text-in {
+    padding: 20px;
+    
+}

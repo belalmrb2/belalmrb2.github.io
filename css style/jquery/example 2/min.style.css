@@ -1,0 +1,59 @@
+body {
+    background: deepskyblue;
+}
+.container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.5);
+}
+.bottom {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #4a4a4a;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+}
+.first,
+.second,
+.sewome,
+.chahrome {
+    width: 100%;
+    height: 0%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 110%;
+/*    transform: scale(0);*/
+    transition: all.5s ease;
+}
+.bottom .first {
+    background: red;
+}
+.bottom .second {
+    background: green;
+    transition-delay: .5s;
+}
+.bottom .sewome {
+    background: blue;
+    transition-delay: 1s;
+}
+.bottom .chahrome {
+    background: #ff0;
+    transition-delay: 1.5s;
+}
+.bottom:hover .first,
+.bottom:hover .second,
+.bottom:hover .sewome,
+.bottom:hover .chahrome
+{
+/*    width: 60px;*/
+    height: 100%;
+}

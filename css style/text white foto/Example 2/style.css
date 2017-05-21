@@ -1,0 +1,177 @@
+body {
+    background: #ddd;
+    padding: 0;
+    margin: 0;
+}
+section .jumbutron {
+    width: 100%;
+    height: 100vh;
+    background: url('bg.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+section .jumbutron .text{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 4px 2px #fff;
+}
+section .jumbutron .down {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%);
+    -webkit-animation: downicons 2s linear infinite;
+    -moz-animation: downicons 2s linear infinite;
+    -o-animation: downicons 2s linear infinite;
+    animation: downicons 2s linear infinite;
+    cursor: pointer;
+}
+@keyframes downicons {
+    0% {
+        top: 90%;
+    }
+    50% {
+        top: 93%;
+    }
+}
+.icons-text {
+    width: 100%;
+    height: 50vh;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    
+}
+.icons-text .item {
+    width: 23%;
+    height: 100%;
+/*    border: 1px solid black;*/
+    overflow: hidden;s
+}
+.first {
+    padding: 0;
+    margin: 0;
+/*    border: 1px solid black;*/
+    position: absolute;
+}
+.first .header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+    font-family: cursive;
+}
+.first .hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transition: all .5s ease;
+    -webkit-transition-delay: .5s;
+	-moz-transition-delay: .5s;
+	-o-transition-delay: .5s;
+	transition-delay: .5s;
+    z-index: 1;
+}
+.first:hover .hover {
+    left: 0;
+    top: 0;
+}
+.first .hover-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255,.9);
+    right: -100%;
+    top: -100%;
+    -webkit-transition: all  .5s ease;
+	-moz-transition: all  .5s ease;
+	-o-transition: all  .5s ease;
+	transition: all  .5s ease;
+/*    z-index: -1;*/
+}
+.first:hover .hover-bg {
+    left: 0;
+    top: 0;
+}
+.first .hover-redmore {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 100%;
+    -webkit-transition: all  .3s ease;
+	-moz-transition: all  .3s ease;
+	-o-transition: all  .3s ease;
+	transition: all  .3s ease;
+    -webkit-transition-delay: .9s;
+	-moz-transition-delay: .9s;
+	-o-transition-delay: .9s;
+	transition-delay: .9s;
+}
+.first:hover .hover-redmore {
+    top: 85%;
+}
+.first .hover-redmore a{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+}
+/*    for btn*/
+.btn {
+    position: absolute;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background: none;
+}
+/*    shadow for text in btn*/
+.btn:hover {
+    -webkit-text-shadow: 2px 2px 80px;
+    -moz-text-shadow: 2px 2px 80px;
+    -o-text-shadow: 2px 2px 80px;
+    text-shadow: 2px 2px 80px;
+}
+/*--=====================================================--*/
+/*--=====================================================--*/
+/*    button blue*/
+.btn-blue-bg {
+    border-color: #3498db;
+    background-color: #3498db;
+    -webkit-text-shadow: 0 2px 2px #4a4a4a;
+    -moz-text-shadow: 0 2px 2px #4a4a4a;
+    -o-text-shadow: 0 2px 2px #4a4a4a;
+    text-shadow: 0 2px 2px #4a4a4a;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1;
+}
+.btn-blue-bg:hover {
+    color: #2980b9;
+    border-color: #2980b9;
+    background: none;
+}
+/*--=====================================================--*/
+.first .hover
+.first .header h1:hover {color: deepskyblue;}
+.first .between {
+    line-height: 25px;
+    padding-left: 10px;
+}
+/*--=====================================================--*/
+/*--=====================================================--*/

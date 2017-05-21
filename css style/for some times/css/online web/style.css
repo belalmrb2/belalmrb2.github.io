@@ -1,0 +1,210 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+    background: #ddd;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, .2);
+}
+a {
+    color: black;
+    text-decoration: none;
+    transition: all .9s ease;
+}
+a:hover {
+    color: white;
+}
+.containerr {
+    padding: 0;
+    margin: 0;
+    width: 99.9%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+}
+.red {
+    width: 8.3333333333%;
+    height: 100%;
+    background: red;
+    cursor: pointer;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+.red:hover {
+    background-color: firebrick;
+}
+.red-big {
+    width: 100%;
+}
+.text {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    top: 50%;
+    position: relative;
+    transform: translate(-0%, -50%);
+    background: rgba(255, 255, 0, .1);
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 300px;
+    font-size: 30px;
+    -webkit-transition: all  .9s ease;
+	-moz-transition: all  .9s ease;
+	-o-transition: all  .9s ease;
+	transition: all  .9s ease;
+}
+.text:hover {
+    background: rgba(255, 255, 255, .1);
+}
+.blue {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #3498db;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.blue:hover {
+    background-color: #2980b9;
+}
+.blue-big {
+    width: 100%;
+}
+.green {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #1abc9c;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.green:hover {
+    background-color: #16a085;
+}
+.green-big {
+    width: 100%;
+}
+.orange {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #f1c40f;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.orange:hover {
+    background-color: #f39c12;
+}
+.orange-big {
+    width: 100%;
+}
+.violet {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #9b59b6;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.violet:hover {
+    background-color: #8e44ad;
+}
+.violet-big {
+    width: 100%;
+}
+.grey {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #95a5a6;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.grey:hover {
+    background-color: #7f8c8d;
+}
+.grey-big {
+    width: 100%;
+}
+.alizarin {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #e74c3c;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.alizarin:hover {
+    background-color: #c0392b;
+}
+.alizarin-big {
+    width: 100%;
+}
+.emerald {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #2ecc71;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.emerald:hover {
+    background-color: #27ae60;
+}
+.emerald-big {
+    width: 100%;
+}
+.clouds {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #ecf0f1;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.clouds:hover {
+    background-color: #bdc3c7;
+}
+.clouds-big {
+    width: 100%;
+}
+.EE7738 {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #EE7738;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.EE7738:hover {
+    background-color: #F59D2A;
+}
+.EE7738-big {
+    width: 100%;
+}
+.blue-2 {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #3BB4C1;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.blue-2:hover {
+    background-color: #048998;
+}
+.blue-2-big {
+    width: 100%;
+}
+.FFDD67 {
+    width: 8.3333333333%;
+    height: 100%;
+    background: #FFDD67;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.FFDD67:hover {
+    background-color: #FFCD38;
+}
+.FFDD67-big {
+    width: 100%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style for comingsoon.css">
+    <script type="text/javascript" src="js/typed.js"></script>
+    <link rel="stylesheet" type="text/css" href="ionicons.css">
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.type-text', {
+        strings: ["COME SOON", "WE", "ARE", "MAKING", "COME SOON"],
+        typeSpeed: 30,
+        backDelay: 500,
+        loop: false
+      });
+  });
+</script>
+
+    <title>come soon</title>
+  </head>
+<body>
+<!--        style for background page-->
+    <div class="background">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+<!--        container-->
+    <div class="container">
+<!--            title for container-->
+        <div class="title">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="type-text"></div>
+        <div class="share">
+            <div class="cover">
+                <a href="#"><div class="facebook"></div></a>
+            </div>
+            <div class="cover">
+                <a href="#"><div class="twitter"></div></a>
+            </div>
+            <div class="cover">
+                <a href="#"><div class="linkedin"></div></a>
+            </div>
+            <div class="cover">
+                <a href="#"><div class="pintrest"></div></a>
+            </div>
+        </div>
+        <p style="width: 100%; position: absolute; text-align: center; color: #4a4a4a; bottom: 0;">Copyright by <a href="index.html">belal.afghan</a></p>
+    </div>
+    <div class="back-to-first-page">BACK</div>
+<script>
+        var buttons = document.getElementsByClassName('back-to-first-page');
+        
+        Array.prototype.forEach.call(buttons, function (b) {
+            b.addEventListener('click', createRipple);
+        });
+        
+        function createRipple (e) {
+            var circle = document.createElement('div');
+            this.appendChild(circle);
+            
+            var d = Math.max(this.clientWidth, this.clientHeight);
+            
+            circle.style.width = circle.style.height = d + 'px';
+            
+            circle.style.left = e.clientX - this.offsetLeft - d / 2 + 'px';
+            circle.style.top = e.clientY - this.offsetTop - d / 2 + 'px'; 
+            
+            circle.classList.add('ripple');
+        }
+    
+    </script>
+</body>
+</html>

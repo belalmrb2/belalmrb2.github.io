@@ -1,0 +1,557 @@
+body {
+    background: deepskyblue;
+}
+.box {
+    width: 20%;
+    height: 50px;
+    padding: 22px;
+    margin: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+/*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+*/
+    -webkit-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -o-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+}
+/*--=====================================================--*/
+/*
+    Style for button exampel 
+            <div class="btn btn-red-checkmark">
+                <i class="ion-checkmark-round"></i>
+                <span>some text</span>
+            </div>
+*/
+/*--=====================================================--*/
+.btn-i {
+    position: absolute;
+    text-align: center;
+/*    display: block;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 50px;
+    width: 175px;
+    height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background: none;
+    overflow: hidden;
+}
+/*    shadow for text in btn*/
+
+/*--=====================================================--*/
+.btn-red-checkmark {
+    border-color: red;
+}
+.btn-red-checkmark i, .btn-red-checkmark span {
+    position: absolute;
+    color: red;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-red-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-red-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-red-checkmark:hover i {
+    top: 0;
+}
+.btn-red-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-blue-checkmark {
+    border-color: #3498db;
+}
+.btn-blue-checkmark i, .btn-blue-checkmark span {
+    position: absolute;
+    color: #3498db;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-blue-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-blue-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-blue-checkmark:hover i {
+    top: 0;
+}
+.btn-blue-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-green-checkmark {
+    border-color: #1abc9c;
+}
+.btn-green-checkmark i, .btn-green-checkmark span {
+    position: absolute;
+    color: #1abc9c;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-green-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-green-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-green-checkmark:hover i {
+    top: 0;
+}
+.btn-green-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-orange-checkmark {
+    border-color: #f1c40f;
+}
+.btn-orange-checkmark i, .btn-orange-checkmark span {
+    position: absolute;
+    color: #f1c40f;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-orange-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-orange-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-orange-checkmark:hover i {
+    top: 0;
+}
+.btn-orange-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-violet-checkmark {
+    border-color: #9b59b6;
+}
+.btn-violet-checkmark i, .btn-violet-checkmark span {
+    position: absolute;
+    color: #9b59b6;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-violet-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-violet-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-violet-checkmark:hover i {
+    top: 0;
+}
+.btn-violet-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-grey-checkmark {
+    border-color: #95a5a6;
+}
+.btn-grey-checkmark i, .btn-grey-checkmark span {
+    position: absolute;
+    color: #95a5a6;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-grey-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-grey-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-grey-checkmark:hover i {
+    top: 0;
+}
+.btn-grey-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-alizarin-checkmark {
+    border-color: #e74c3c;
+}
+.btn-alizarin-checkmark i, .btn-alizarin-checkmark span {
+    position: absolute;
+    color: #e74c3c;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-alizarin-checkmark i {
+    position: absolute;
+    font-size: 30px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-alizarin-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-alizarin-checkmark:hover i {
+    top: 0;
+}
+.btn-alizarin-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-emerald-checkmark {
+    border-color: #2ecc71;
+}
+.btn-emerald-checkmark i, .btn-emerald-checkmark span {
+    position: absolute;
+    color: #2ecc71;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-emerald-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-emerald-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-emerald-checkmark:hover i {
+    top: 0;
+}
+.btn-emerald-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-EE7738-checkmark {
+    border-color: #EE7738;
+}
+.btn-EE7738-checkmark i, .btn-EE7738-checkmark span {
+    position: absolute;
+    color: #EE7738;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-EE7738-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-EE7738-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-EE7738-checkmark:hover i {
+    top: 0;
+}
+.btn-EE7738-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-3BB4C1-checkmark {
+    border-color: #3BB4C1;
+}
+.btn-3BB4C1-checkmark i, .btn-3BB4C1-checkmark span {
+    position: absolute;
+    color: #3BB4C1;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-3BB4C1-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-3BB4C1-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-3BB4C1-checkmark:hover i {
+    top: 0;
+}
+.btn-3BB4C1-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-FFDD67-checkmark {
+    border-color: #FFDD67;
+}
+.btn-FFDD67-checkmark i, .btn-FFDD67-checkmark span {
+    position: absolute;
+    color: #FFDD67;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-FFDD67-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-FFDD67-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-FFDD67-checkmark:hover i {
+    top: 0;
+}
+.btn-FFDD67-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/
+.btn-ecf0f1-checkmark {
+    border-color: #ecf0f1;
+}
+.btn-ecf0f1-checkmark i, .btn-ecf0f1-checkmark span {
+    position: absolute;
+    color: #ecf0f1;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.btn-ecf0f1-checkmark i {
+    position: absolute;
+    font-size: 25px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(0,0,0,0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+}
+.btn-ecf0f1-checkmark span {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+/*    background: rgba(255, 255, 255, 0.2);*/
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+    -o-transition: top .3s;
+} 
+.btn-ecf0f1-checkmark:hover i {
+    top: 0;
+}
+.btn-ecf0f1-checkmark:hover span {
+    top: -100%;
+}
+/*--=====================================================--*/

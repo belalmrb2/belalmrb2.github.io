@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!--        link for icons css-->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+    <div class="container">
+      <div class="cover">
+          <div class="bottom-lock-iphone">
+            <label class="switch-lock">
+                <input type="checkbox">
+                <div class="slider-lock round"></div>
+            </label>
+          </div>
+          <div class="bottom-voice-iphone">
+            <label class="switch-voice">
+                <input type="checkbox">
+                <div class="slider-voice round"></div>
+            </label>
+          </div>
+          <div class="Positive-voice-iphone">
+            <span><i class="ion-plus-round"></i></span>
+          </div>
+          <div class="Negative-voice-iphone">
+            <span><i class="ion-minus-round"></i></span>
+          </div>
+        <div class="cover-in">
+            <div class="camerra-iphone"></div>
+            <div class="speaker-iphone"></div>
+            <div class="buttom-between-iphone"></div>
+          <div class="tache">
+            <header>
+<!--                    battrey-->
+                <div class="Battery">
+                    <div class="animation"></div>
+                    <span></span>
+                </div>
+<!--                    antenna-->
+                <div class="antenna">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+<!--                    Wi-Fi-->
+                <div class="wifi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+<!--                    timer-->
+                <div class="timer">
+                    <span id="timer-js"></span>
+                </div>
+            </header>
+              <div class="between">
+                <div id="gallery" class="gallery">
+                <img src="imags/laptop-1.jpg" width="60" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="imags/laptop-2.jpg" width="60" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="imags/laptop-3.jpg" width="60" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="imags/laptop-4.jpg" width="60" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <img src="imags/laptop-5.jpg" width="60" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                <img src="imags/laptop-6.jpg" width="60" height="40" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                <img src="imags/laptop-7.jpg" width="60" height="40"  onclick="openModal();currentSlide(7)" class="hover-shadow">
+                <img src="imags/laptop-8.jpg" width="60" height="40" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow-iphone"></div>
+    </div>
+    <!--    modal for gallery-->
+<div id="mygalleryModal" class="modal">
+  <div class="modal-content">
+<!--      img 1-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">1 / 10</div>
+      <img src="imags/laptop-1.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+<!--      img 2-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">2 / 10</div>
+      <img src="imags/laptop-2.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+<!--      img 3-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">3 / 10</div>
+      <img src="imags/laptop-3.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+<!--      img 4-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">4 / 10</div>
+      <img src="imags/laptop-4.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+<!--    img 5-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">5 / 10</div>
+      <img src="imags/laptop-5.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+<!--    img 6-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">6 / 10</div>
+      <img src="imags/laptop-6.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+<!--    img 6-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">7 / 10</div>
+      <img src="imags/laptop-7.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+<!--    img 6-->
+    <div class="myBox">
+        <div class="title">
+            <span onclick="closeModal()"></span>
+            <span></span>
+            <span></span>
+        </div>
+      <div class="numbertext">8 / 10</div>
+      <img src="imags/laptop-8.jpg" style="width:100%">
+        <div class="btn-download">Download</div>
+    </div>
+      
+    <div class="btn-prev" onclick="plusSlides(1)">
+        <span>BACK</span>
+        <i class="ion-chevron-left"></i>
+    </div>
+    <div class="btn-next" onclick="plusSlides(1)">
+        <span>NEXT</span>
+        <i class="ion-chevron-right"></i>
+    </div>
+  </div>
+</div>
+<!--    javascript for image in The Gallary-->
+<script>
+function openModal() {
+  document.getElementById('mygalleryModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('mygalleryModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("myBox");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    background-color: fuchsia;
+}
+.container {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,0.5);
+}
+.add {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color:deepskyblue;
+    border: 2px solid deepskyblue;
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    bottom: 5%;
+    right: 5%;
+    transition: color .3s, background .3s;
+    cursor: pointer;
+    z-index: 2;
+}
+.add:hover {
+    background: white;
+    color: deepskyblue;
+}
+.test {
+    width: 80px;
+    height: 370px;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    border-bottom-right-radius: 25px;
+    z-index: 1;
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+}
+/*    style for facebook*/
+.ion-social-facebook {
+    color: dodgerblue;
+}
+.test ul li:nth-child(1) {
+    border-color: dodgerblue;
+}
+/*    end*/
+/*    style for instagram*/
+.ion-social-instagram {
+    color: darkgoldenrod;
+}
+.test ul li:nth-child(2) {
+    border-color: darkgoldenrod;
+}
+/*    end*/
+/*    style for codepen*/
+.ion-social-codepen {
+    color: dimgrey;
+}
+.test ul li:nth-child(3) {
+    border-color: dimgrey;
+}
+/*    end*/
+/*    style for twitter*/
+.ion-social-twitter {
+    color: cyan;
+}
+.test ul li:nth-child(4) {
+    border-color: cyan;
+}
+/*    end*/
+/*    style for linkedin*/
+.ion-social-linkedin {
+    color: dodgerblue;
+}
+.test ul li:nth-child(5) {
+    border-color: dodgerblue;
+}
+/*    end*/
+/*    mohem*/
+.test ul {
+    text-decoration: none;
+    list-style-type: none;
+    width: 50%;
+    position: absolute;
+    text-align: center;
+/*    left: -23%;*/
+    background: green;
+}
+.test ul li {
+/*    display: block;*/
+    line-height: 53px;
+    font-size: 40px;
+    position: relative;
+    z-index:3;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    height: 50px;
+    width: 50px;
+    right: 0%;
+    margin: 5px
+}
+/*   ======================== mohem =============================  */
+.add:hover .test {
+    transform: scale(1);
+    right: 5%;
+    top: 2.5%;
+}

@@ -1,0 +1,643 @@
+body {
+  background: deepskyblue;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 500px;
+  height: 550px;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+/*  box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);*/
+}
+.shadow-iphone {
+    width: 278px;
+    height: 10px;
+    background: black;
+    -webkit-box-shadow: 0 2px 9px -2px #000;
+    -moz-box-shadow: 0 2px 9px -2px #000;
+    -o-box-shadow: 0 2px 9px -2px #000;
+    box-shadow: 0 2px 9px -2px #000;
+    top: 100%;
+    left: 22%;
+    position: absolute;
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    filter: blur(6px);
+    margin: 0;
+    padding: 0;
+}
+.cover {
+  width: 280px;
+  height: 535px;
+/*  border: 2px solid #eee;*/
+  -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -o-border-radius: 18px;
+    border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  -webkit-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+  -o-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+  box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+} 
+.cover-in {
+  width: 278px;
+  height: 532px;
+/*  border: 2px solid rgba(255, 255, 255, .5);*/
+  border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+}
+.tache{
+  width: 250px;
+  height: 450px;
+/*  border: 1px solid black;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.camerra-iphone {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: inset 0 20px 40px -20px rgba(0,0,0,1);
+    background-image: radial-gradient(circle 248px at center, #1a46ac 0%, #3d77b6 47%, #0e1729 100%); 
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    opacity: .9;
+    transform: translate(-18%, -3%);
+}
+.speaker-iphone {
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+    background: #242424; 
+} 
+.bottom-voice-iphone {
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    background: #000;
+    top: 8%;
+    right: 100%;
+}
+.Positive-voice-iphone {
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    right: 100%;
+    top: 15%;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.Positive-voice-iphone span {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    background: rgba(0,0,0,0.1);
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0;
+    transition: left .3s ease;
+}
+.Positive-voice-iphone:hover  span{
+    left: -38px;
+}
+.Negative-voice-iphone {
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    right: 100%;
+    top: 21%;
+    background: #000;
+    cursor: pointer;
+}
+.Negative-voice-iphone span {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    text-align: center; 
+    background: rgba(0,0,0,0.1);
+    font-size: 25px;
+    line-height: 23px;
+    margin: 0;
+    transition: left .3s ease;
+}
+.Negative-voice-iphone:hover  span{
+    left: -38px;
+}
+.buttom-between-iphone {
+    width: 38px;
+    height: 38px;
+    border: 2px solid rgba(0,0,0,.2);
+    box-shadow: inset 1px 1px 10px 1px  #4a4a4a;
+    border-radius: 50%;
+    position: absolute;
+    top: 92.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: box-shadow 3s ease;
+}
+.buttom-between-iphone:hover {
+    box-shadow: inset 1px 1px 10px 1px  #fff;
+}
+.bottom-lock-iphone {
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    top: 18%;
+    left: 100%;
+    background: #000;
+    cursor: pointer;
+}
+.bottom-lock-iphone span {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    left: -40px;
+    text-align: center; 
+    background: rgba(0,0,0,0.1);
+    font-size: 25px;
+    line-height: 23px;
+    margin: 0;
+    transition: left .3s ease;
+}
+.bottom-lock-iphone:hover  span{
+    left: 0px;
+}
+
+/* --============================== switch lock style  ===================================-- */
+.switch-lock {
+  top: -20%;
+  right: 70px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.bottom-lock-iphone:hover .switch-lock {
+    right: -2px;
+}
+.switch-lock input { display: none;}
+
+.slider-lock {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+.slider-lock:before {
+  position: absolute;
+  font-size: 20px;
+  content: '\f3b5';
+  font-family: Ionicons;
+  text-align: center;
+  line-height: 26px;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  transition: .4s ease;
+}
+input:checked + .slider-lock {
+  background: yellowgreen;
+}
+input:focus + .slider-lock {
+  box-shadow: 0 20px 40px -20px #000;
+}
+input:checked + .slider-lock:before{
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  content: '\f392';
+  font-family: Ionicons;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+}
+.slider-lock.round {
+  border-radius: 34px;
+}
+
+.slider-lock.round:before {
+  border-radius: 50%;
+}
+/* --============================== switch voice style  ===================================-- */
+
+.switch-voice {
+  top: -25%;
+  right: -20px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  transition: .4s;
+}
+.bottom-voice-iphone:hover .switch-voice {
+    right: 65px;
+}
+.switch-voice input { display: none;}
+.slider-voice {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  transition: .4s ease;
+}
+.slider-voice:before {
+  position: absolute;
+  font-size: 20px;
+  content: '\f3ba';
+  font-family: Ionicons;
+  text-align: center;
+  line-height: 26px;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  transition: .4s ease;
+}
+input:checked + .slider-voice {
+  background: yellowgreen;
+}
+input:focus + .slider-voice {
+  box-shadow: 0 20px 40px -20px #000;
+}
+input:checked + .slider-voice:before{
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  content: '\f3b9';
+  font-family: 'Ionicons';
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+}
+.slider-voice.round {
+  border-radius: 34px;
+}
+
+.slider-voice.round:before {
+  border-radius: 50%;
+}
+.tache header {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background: 
+}
+/* --==============================  style for bettrey  ===================================-- */
+.Battery {
+  width: 20px;
+  height: 10px;
+  border: 1px solid #4a4a4a;
+  position: absolute;
+  top: 50%;
+  left: 96%;
+  transform: translate(-96%, -50%);
+  margin: 0;
+  padding: 0;
+}
+.Battery .animation {
+  background: red;
+  width: 0;
+  height: 100%;
+  animation: battrey 5s linear infinite;
+}
+@keyframes battrey {
+  0%   { width: 0;    background: red;}
+  50%  { width: 50%;  background: black;}
+  100% { width: 100%; background: #42f44e;}
+}
+.Battery span {
+  width: 15%;
+  height: 50%;
+  position: absolute; 
+  border-top: 1px solid #4a4a4a;
+  border-bottom: 1px solid #4a4a4a;
+  border-right: 1px solid #4a4a4a;
+  left: 100%;
+  top: 13%;
+  margin: 0;
+  padding: 0;
+} 
+/* --==============================  end style  ===================================-- */
+/* --==============================  style for antenna  ===================================-- */
+.antenna {
+  width: 40px;
+  height: 10px;
+/*   border: 1px solid #000; */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+.antenna span {
+  position:absolute;
+  width: 18%;
+  height: 98%;
+  border-radius: 50%;
+/*   background: #ddd; */
+  border: .5px solid #000;
+  animation: antenna 5s linear infinite;
+} 
+.antenna span:nth-child(1) {
+  left: 0;
+}
+.antenna span:nth-child(2) {
+  left: 26%;
+  animation-delay: .3s;
+}
+ .antenna span:nth-child(3) {
+  left: 52%;
+  animation-delay: .6s;
+}
+.antenna span:nth-child(4) {
+  left: 78%;
+  animation-delay: .9s;
+}
+@keyframes antenna {
+  0%, 100% { background: none;}
+  50%      { background: #ddd;}
+}
+/* --==============================  end style for antenna  ===================================-- */
+/* --==============================  style for wi-fi  ===================================-- */
+.wifi {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  width: 20px;
+  height: 10px;
+/*   border: 1px solid red; */
+}
+.wifi span {
+  position: absolute;
+}
+.wifi span:nth-child(1) {
+  padding: 6px;
+  border: 1px solid transparent;
+  border-top: 1px solid black; 
+  top : 120%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  border-radius: 50%;
+  animation: wifi 3s linear .9s infinite; 
+}
+.wifi span:nth-child(2) {
+  padding: 4px;
+  border: 1px solid transparent;
+  border-top: 1px solid black; 
+  top : 110%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  border-radius: 50%;
+  animation: wifi 3s linear .6s infinite; 
+}
+.wifi span:nth-child(3) {
+  padding: 2px;
+  border: 1px solid transparent;
+  border-top: 1px solid black;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+  border-radius: 50%;
+  animation: wifi 3s linear .3s infinite; 
+}
+.wifi span:nth-child(4) {
+  width: 2px;
+  height: 2px;
+  border-top: 1px solid black;
+/*   padding: 4px; */
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+  border-radius: 50%;
+  animation: wifi 3s linear infinite; 
+}
+@keyframes wifi {
+  0%, 100% { border-top-color: #4a4a4a;}
+  50%      { border-top-color: #fff;}
+}
+/* --======================== style for timer =======================-- */
+.timer {
+  width: 50px;
+  height: 10px;
+  color: #4a4a4a;
+  font-size: 9px;
+  text-align: center;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%, -50%);
+}
+/* --======================== end style for timer ====================-- */ 
+footer {
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1)
+}
+/* --================= style for between ============--*/
+.between {
+    width: 100%;
+    height: 83%;
+    top: 5%;
+    position: absolute;
+/*    background: greenyellow;*/
+}
+/* --================= style for header in between ============--*/
+.header {
+    width: 100%;
+    height: 25.8%;
+    text-align: center;
+}
+.header .type-text {
+    position: absolute;
+    width: 100%;
+    height: 119px;
+    line-height: 118px;
+    font-size: 25px;
+    color: #4a4a4a;
+    text-shadow: 4px 4px 4px ;
+/*    font-weight: bold;*/
+    font-family: 'Righteous', cursive;
+}
+.typed-cursor {
+    display: none;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: arial;
+}
+.login-form {
+  width: 100%;
+/*  background: #eee;*/
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 31.5%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 5px 7px 5px 15px;
+  background: #fff;
+  color: #666;
+  border: 2px solid #ddd;
+}
+.form-control:focus, .form-control:focus + .fa {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.form-group .fa {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  color: #999;
+}
+
+.log-status.wrong-entry {
+  -moz-animation: wrong-log 0.3s;
+  -webkit-animation: wrong-log 0.3s;
+  -o-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+
+.log-status.wrong-entry .form-control, .wrong-entry .form-control + .fa {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  cursor: pointer;
+}
+/* --=========================================-- */
+.btn-login {
+    background: #3498db;
+    transition: color .3s, background .3s ease-in-out;
+}
+.btn-login:hover {
+    background: none;
+    color: #3498db;
+    border: none;
+}
+/* --=========================================-- */
+.link {
+  text-decoration: none;
+  color: #C6C6C6;
+  float: right;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #8C918F;
+}
+
+.alert {
+  display: none;
+  font-size: 12px;
+  color: #f00;
+  float: left;
+}
+
+@-moz-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@-webkit-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}

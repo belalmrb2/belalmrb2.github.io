@@ -1,0 +1,35 @@
+body {
+  background: deepskyblue;
+}
+.container {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -o-box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px -20px rgba(0,0,0,.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #000;
+}
+P {
+    text-align: center;
+    color: #fff;
+    font: 80px existence;
+    text-shadow: 0px 0px 10px blue,
+                 0px 0px 20px blue,
+                 0px 0px 30px blue,
+                 0px 0px 40px blue,
+                 0px 0px 50px blue,
+                 0px 0px 60px blue,
+                 0px 0px 70px blue
+}
