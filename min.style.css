@@ -1,0 +1,28 @@
+body {
+    background: #eee;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4em;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+}
+.container > h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color .3s ease;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    color: black;
+}
