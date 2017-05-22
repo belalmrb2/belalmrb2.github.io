@@ -4,8 +4,8 @@
     background-image: url('../image/background-for-iphone-3.png');
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 5%;
+    transform: skew(-20deg) translate(-5%, -50%);
     background-size: 100%;
     z-index: 1;
 }
