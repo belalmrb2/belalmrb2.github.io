@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/buttom.css">
     <link rel="stylesheet" type="text/css" href="css/iphone-gallery.css">
     <link rel="stylesheet" type="text/css" href="css/style%20for%20iphone%203.css">
-    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
@@ -14,65 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arimo|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <style>
-        .btn-prv-carousel {
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 255, 255, 0.58);
-            border-radius: 50%;
-/*            font-size: 3em;*/
-            position: absolute;
-            top: 50%;
-            left: 1%;
-            transform: translateY(-50%);
-            opacity: .5;
-            transition: .2s linear;
-            cursor: pointer;
-        }
-        .btn-prv-carousel i ,.btn-next-carousel i{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50px;
-            color: #525252;
-
-        }
-        .btn-prv-carousel:hover, .btn-next-carousel:hover{
-            opacity: 1;
-        }
-         .btn-next-carousel {
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 255, 255, 0.58);
-            border-radius: 50%;
-            top: 50%;
-            right: 30%;
-            position: absolute;
-            transform: translateY(-50%);
-            opacity: .5;
-            transition: .2s linear;
-            cursor: pointer;
-             z-index: 2;
-        }
-        @media (max-width: 1150px) {
-            .btn-next-carousel {
-                right: 0%;
-            }
-        }
-        @media (max-width: 850px) {
-            .btn-next-carousel {
-                background: rgb(250, 250, 250);
-                width: 50px;
-                height: 50px;
-            }
-            .btn-prv-carousel {
-                background: rgb(255, 255, 255);
-                width: 50px;
-                height: 50px;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -97,6 +38,7 @@
             </div>
         </div>
     </div>
+    &nbsp;
     <section class="content">
         <div class="mySlides carousel">
             <div class="iphone">
@@ -248,10 +190,159 @@
                 <div class="btn-learn"><a href="#">Learn more</a></div>
                 <div class="btn-youtube"><a href="#">WACH VIDEO</a></div>
             </div>
+            <div class="btn-prv-carousel" onclick="plusSlides(-1)"><i class="ion-ios-arrow-left"></i></div>
+            <div class="btn-next-carousel" onclick="plusSlides(1)"><i class="ion-ios-arrow-right"></i></div>
         </div>
-        
-        <div class="btn-prv-carousel" style="display: none;" onclick="plusSlides(-1)"><i class="ion-ios-arrow-left"></i></div>
-        <div class="btn-next-carousel" style="display: none;" onclick="plusSlides(1)"><i class="ion-ios-arrow-right"></i></div>
+        <div class="mySlides carousel">
+            <div class="text">
+                <p>Second Iphone web style white HTML & CSS</p>
+                <br>
+                <div class="text-on-text">
+                    <em>The site has a very nice style and is appealing. There is the page in all different sizes and can be used with all devices. In addition, it is convenient to work with this style.</em>
+                </div>
+                <div class="btn-learn"><a href="#">Learn more</a></div>
+                <div class="btn-youtube"><a href="#">WACH VIDEO</a></div>
+            </div>
+            <div class="iphone">
+                <div class="iphone-gallery">
+                    <div class="header-2">
+                        <i class="ion-navicon"></i>
+                        <i class="ion-ios-search"></i>
+                    </div>
+                    <div class="between-2">
+                        <span>photolyphia.</span>
+                            <br>
+                        <span>STOCK PHOTOS</span>
+                    </div>
+                    <div class="image-2">
+                        <div class="cover-2">
+                            <div class="image-title">
+                                <span>Mountain</span>
+                                <span>|</span>
+                                <span>124 PHTOST</span>
+                            </div>
+                            <a href="pages/first image/index.html"><img src="image/image%201.jpg"></a>
+                        </div>
+                        <br>
+                        <div class="cover-2">
+                            <div class="image-title">
+                                <span>Lake</span>
+                                <span>|</span>
+                                <span>44 PHTOST</span>
+                            </div>
+                            <a href="pages/second image/index.html"><img src="image/image%202.jpg"></a>
+                        </div>
+                        <div class="break"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-prv-carousel" onclick="plusSlides(-1)"><i class="ion-ios-arrow-left"></i></div>
+            <div class="btn-next-carousel" onclick="plusSlides(1)"><i class="ion-ios-arrow-right"></i></div>
+        </div>
+        <div class="mySlides carousel">
+            <div class="text">
+                <p>Third Iphone web style white HTML & CSS</p>
+                <br>
+                <div class="text-on-text">
+                    <em>The site has a very nice style and is appealing. There is the page in all different sizes and can be used with all devices. In addition, it is convenient to work with this style.</em>
+                </div>
+                <div class="btn-learn"><a href="#">Learn more</a></div>
+                <div class="btn-youtube"><a href="#">WACH VIDEO</a></div>
+            </div>
+            <div class="iphone">
+                <div class="iphone-3">
+            <ul>
+                <!--                mail-->
+                <li id="mail-2">
+                    <a href="soon.html"><img src="icons/mail.png" width="35">
+                    </a>
+                </li>
+                <!--                calender-->
+                <li id="calendar-2">
+                    <a href="soon.html"><img src="icons/calendar.png" width="35">
+                    </a>
+                </li>
+                <!--                photos-->
+                <li id="photos-2">
+                    <a href="pages/pohtos/index.html"><img src="icons/photos.png" width="35">
+                    </a>
+                </li>
+                <!--                camera-->
+                <li id="camera-2">
+                    <a href="soon.html"><img src="icons/camera.png" width="35">
+                    </a>
+                </li>
+                <!--                maps-->
+                <li id="maps-2">
+                    <a href="https://www.google.at/maps/"><img src="icons/maps.png" width="35">
+                    </a>
+                </li>
+                <!--                clock-->
+                <li id="clock-2">
+                    <a href="soon.html"><img src="icons/clock.png" width="35">
+                    </a>
+                </li>
+                <!--                wearher-->
+                <li id="weather-2">
+                    <a href="https://www.google.at/webhp?sourceid=chrome-instant&rlz=1C1CHBD_deAT731AT731&ion=1&espv=2&ie=UTF-8#q=google+weather"><img src="icons/weather.png" width="35">
+                    </a>
+                </li>
+                <!--                info-->
+                <li id="info-2-2-2">
+                    <a href="soon.html"><img src="icons/info.png" width="35">
+                    </a>
+                </li>
+                <!--                news-->
+                <!--            <li id="news"><a href="#"><img src="icons/stocks.png" width="35"></a></li>-->
+                <!--                passbook-->
+                <li id="passbook-2">
+                    <a href="soon.html"><img src="icons/passbook.png" width="35">
+                    </a>
+                </li>
+                <!--                notes-->
+                <li id="notes-2">
+                    <a href="pages/notes/index.html"><img src="icons/notes.png" width="35">
+                    </a>
+                </li>
+                <!--                comming soon-->
+                <li id="info-2-2">
+                    <a href="soon.html"><img src="icons/info.png" width="35">
+                    </a>
+                </li>
+                <!--                notes-->
+                <li id="stocks-2">
+                    <a href="soon.html"><img src="icons/stocks.png" width="35">
+                    </a>
+                </li>
+                <!--                videos-->
+                <li id="videos-2">
+                    <a href="soon.html"><img src="icons/videos.png" width="35">
+                    </a>
+                </li>
+                <!--                commig soon-->
+                <li id="info-3-2">
+                    <a href="soon.html"><img src="icons/info.png" width="35">
+                    </a>
+                </li>
+                <!--                music-->
+                <li id="music-2">
+                    <a href="pages/music/index.html"><img src="icons/music.png" width="35">
+                    </a>
+                </li>
+                <!--                app-->
+                <li id="app-2">
+                    <a href="pages/app/index.html"><img src="icons/app.png" width="35">
+                    </a>
+                </li>
+                <!--                settings-->
+                <li id="setting-2"><a href="pages/setting/index.html"><img src="icons/settings.png" width="35" ></a></li>
+            </ul>
+            <div class="close-2"></div>
+        </div>
+            </div>
+            <div class="btn-prv-carousel" onclick="plusSlides(-1)"><i class="ion-ios-arrow-left"></i></div>
+            <div class="btn-next-carousel" onclick="plusSlides(1)"><i class="ion-ios-arrow-right"></i></div>
+        </div>
     </section>
     <section class="row">
         &nbsp;
