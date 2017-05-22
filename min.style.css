@@ -15,6 +15,24 @@ body {
 .container > h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    cursor: pointer;
+    z-index: 2
+}
+.container > h1:before {
+    content: '';
+    position: absolute;
+    background: red;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    top: 100%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 20px 40px -10px red;
+}
+.container > h1:hover:before {
+    width: 100%;
+    left: 0;
 }
 a {
     color: #4a4a4a;
@@ -63,4 +81,16 @@ footer > .icons > li {
     line-height: 50px;
     font-size: 2em;
     text-shadow: 1px 2px 4px white;
+}
+footer > p {
+    position: absolute;
+    top: 50%;
+    color: #dedede;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    right: 0;
+    top: 90%;
+    transform: translateY(-90%);
 }
