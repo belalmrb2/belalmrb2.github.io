@@ -1,48 +1,99 @@
 body {
     background: #eee;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 .container {
-    width: 80%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 4em;
+    width: 100%;
     background: white;
     border-radius: 4px;
     box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-wrap: wrap;
 }
-.container > h1 {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+.cover {
+    width: 50%;
+    height: 400px;
     position: relative;
-    cursor: pointer;
-    z-index: 2
+    overflow: hidden;
 }
-.container > h1:before {
-    content: '';
-    position: absolute;
-    background: red;
-    width: 0%;
-    height: 2px;
-    left: 50%;
-    top: 100%;
-    transition: .5s ease-in-out;
-    box-shadow: 0 20px 40px -10px red;
-}
-.container > h1:hover:before {
+.content {
     width: 100%;
-    left: 0;
+    height: 100%;
 }
-a {
-    color: #4a4a4a;
-    text-decoration: none;
-    transition: color .3s ease;
-    line-height: 25px;
-    font-family: 'Roboto', sans-serif;
+.cover > .content > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 5s;
+    z-index: 1;
 }
-a:hover {
-    color: black;
+.cover > .content:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.31);
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    transition: .4s;
+    transition-delay: .3s;
+}
+.cover > .content:hover:before {
+    top: 0;
+}
+.cover > .content:hover img {
+    transform: scale(2) rotate(10deg);
+}
+.content > h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
+    position: relative;
+    z-index: 2;
+    line-height: 200px;
+    transition: .3s;
+    transition-delay: .3s;
+}
+.container > .cover > .content:hover h1{
+    line-height: 400px;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 1px 2px 4px #4a4a4a;
+}
+.container > .cover > .btn-learn {
+    background: rgba(255, 255, 255, 0.64);
+    height: 50px;
+    z-index: 4;
+    position: absolute;
+    width: 250px;
+    top: 90%;
+    left: -40%;
+    transform: translateY(-90%);
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.4em;
+    border-radius: 4px;
+    transition: .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transition-delay: .3s;
+}
+.container > .cover > .btn-learn > a {color: #4a4a4a; text-decoration: none;}
+.container > .cover:hover .btn-learn {
+    transform: translate(-50%, -90%);
+    left: 50%;
+}
+.icon-right {
+    opacity: 0;
+    position: relative;
+    transition: .5s
+}
+.btn-learn:hover .icon-right {
+    opacity: 1;
+    padding-left: 30px;
 }
 footer {
     width: 100%;
@@ -81,6 +132,13 @@ footer > .icons > li {
     line-height: 50px;
     font-size: 2em;
     text-shadow: 1px 2px 4px white;
+}
+footer > .icons > li > a {
+    color: #4a4a4a;
+    transition: .3s linear;
+}
+footer  >.icons > li > a:hover {
+    color: black;
 }
 footer > p {
     position: absolute;
