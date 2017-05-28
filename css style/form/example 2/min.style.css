@@ -1,0 +1,103 @@
+body {
+    background: #eee;
+    margin: 0;
+}
+.container {
+    width: 400px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.container > .logo {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.container > .logo > img {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}   
+.container > .login_form {
+    width: 85%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+.container > .login_form > .fname {
+    position: relative;
+    width: 100%;
+    height: 45px;
+}
+.container > .login_form > .fname > .input_name {
+    width: 97%;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    padding-left: 10px;
+    color: orangered;
+}
+.container > .login_form > .fname > i{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-95%, -50%);
+}
+.input_name:focus + i {
+    color: orangered;
+}
+.container > .login_form > .lname {
+    position: relative;
+    width: 100%;
+    height: 45px;
+}
+.container > .login_form > .lname > .input_name {
+    width: 97%;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    padding-left: 10px;
+    color: orangered;
+}
+.container > .login_form > .lname > i{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-95%, -50%);
+}
+.btn-get-starte {
+    width: 250px;
+    height: 50px;
+/*    background: #007fe0;*/
+    background-image: linear-gradient(-180deg, #007fe0 0%, deepskyblue 90%);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    overflow: hidden;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%) translateY(-10%);
+}
+.btn-get-starte:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.42);
+    transform: rotate(30deg);
+    left: 70%;
+    transition: 1s;
+}
+.btn-get-starte:hover:before{
+    left: -90%;
+}

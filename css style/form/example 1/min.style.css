@@ -1,0 +1,53 @@
+body {
+    background: #eee;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.input_name {
+    width: 85%;
+    height: 50px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    color: deepskyblue;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: rgba(0, 191, 255, 0.44);
+    transition: background .5s;
+}
+.input_name:focus {
+    background: none;
+}
+.conutry {
+    width: 90%;
+    height: 50px;
+    margin: 20px;
+    border-radius: 4px;
+    background: deepskyblue;
+    color: white;
+}
+.comment {
+    width: 90%;
+    height: 100px;
+    margin: 20px;
+    border-radius: 4px;
+    background: deepskyblue;
+    color: white;
+    padding: 0;
+}
+.btn-submit {
+    width: 90%;
+    height: 50px;
+    margin: 20px;
+}
