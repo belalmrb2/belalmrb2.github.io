@@ -10,10 +10,24 @@ body {
 .container {
     width: 100%;
     background: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
     border-radius: 4px;
+    -webkit-box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
     box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
 }
 .cover {
     width: 50%;
@@ -29,6 +43,10 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
     transition: 5s;
     z-index: 1;
 }
@@ -40,13 +58,25 @@ body {
     position: absolute;
     z-index: 2;
     top: 100%;
-    transition: .4s;
+    -webkit-transition: .4s linear;
+    -webkit-transition-delay: .3s;
+    -moz-transition: .4s linear;
+    -moz-transition-delay: .3s;
+    -ms-transition: .4s linear;
+    -ms-transition-delay: .3s;
+    -o-transition: .4s linear;
+    -o-transition-delay: .3s;
+    transition: .4s linear;
     transition-delay: .3s;
 }
 .cover > .content:hover:before {
     top: 0;
 }
 .cover > .content:hover img {
+    -webkit-transform: scale(2) rotate(10deg);
+    -moz-transform: scale(2) rotate(10deg);
+    -ms-transform: scale(2) rotate(10deg);
+    -o-transform: scale(2) rotate(10deg);
     transform: scale(2) rotate(10deg);
 }
 .content > h1 {
@@ -56,13 +86,25 @@ body {
     position: relative;
     z-index: 2;
     line-height: 200px;
-    transition: .3s;
+    -webkit-transition: .3s linear;
+    -webkit-transition-delay: .3s;
+    -moz-transition: .3s linear;
+    -moz-transition-delay: .3s;
+    -ms-transition: .3s linear;
+    -ms-transition-delay: .3s;
+    -o-transition: .3s linear;
+    -o-transition-delay: .3s;
+    transition: .3s linear;
     transition-delay: .3s;
 }
 .container > .cover > .content:hover h1{
     line-height: 400px;
     font-size: 2.5em;
     color: white;
+    -webkit-text-shadow: 1px 2px 4px #4a4a4a;
+    -moz-text-shadow: 1px 2px 4px #4a4a4a;
+    -ms-text-shadow: 1px 2px 4px #4a4a4a;
+    -o-text-shadow: 1px 2px 4px #4a4a4a;
     text-shadow: 1px 2px 4px #4a4a4a;
 }
 .container > .cover > .btn-learn {
@@ -73,23 +115,47 @@ body {
     width: 250px;
     top: 90%;
     left: -100%;
+    -webkit-transform: translateY(-90%);
+    -moz-transform: translateY(-90%);
+    -ms-transform: translateY(-90%);
+    -o-transform: translateY(-90%);
     transform: translateY(-90%);
     text-align: center;
     line-height: 50px;
     font-size: 1.4em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
     border-radius: 4px;
+    -webkit-transition: .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -moz-transition: .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -ms-transition: .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -o-transition: .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
     transition: .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -ms-transition-delay: .3s;
+    -o-transition-delay: .3s;
     transition-delay: .3s;
 }
 .container > .cover > .btn-learn > a {color: #4a4a4a; text-decoration: none;}
 .container > .cover:hover .btn-learn {
+    -webkit-transform: translate(-50%, -90%);
+    -moz-transform: translate(-50%, -90%);
+    -ms-transform: translate(-50%, -90%);
+    -o-transform: translate(-50%, -90%);
     transform: translate(-50%, -90%);
     left: 50%;
 }
 .icon-right {
     opacity: 0;
     position: relative;
-    transition: .5s
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+    transition: .5s linear;
 }
 .btn-learn:hover .icon-right {
     opacity: 1;
@@ -104,13 +170,25 @@ footer {
     cursor: pointer;
 }
 footer:hover img {
+    -webkit-transform: scale(1.1) translateX(3%);
+    -moz-transform: scale(1.1) translateX(3%);
+    -ms-transform: scale(1.1) translateX(3%);
+    -o-transform: scale(1.1) translateX(3%);
     transform: scale(1.1) translateX(3%);
     opacity: 1;
 }
 footer > img {
     width: 100%;
     height: 100%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
+    -webkit-transform: scale(1) translateX(0%);
+    -moz-transform: scale(1) translateX(0%);
+    -ms-transform: scale(1) translateX(0%);
+    -o-transform: scale(1) translateX(0%);
     transform: scale(1) translateX(0%);
     opacity: 0.5;
 }
@@ -121,6 +199,10 @@ footer > .icons {
     position: absolute;
     top: 95%;
     left: 50%;
+    -webkit-transform: translate(-50%, -95%);
+    -moz-transform: translate(-50%, -95%);
+    -ms-transform: translate(-50%, -95%);
+    -o-transform: translate(-50%, -95%);
     transform: translate(-50%, -95%);
     list-style: none;
 }
@@ -131,10 +213,18 @@ footer > .icons > li {
     text-align: center;
     line-height: 50px;
     font-size: 2em;
+    -webkit-text-shadow: 1px 2px 4px white;
+    -moz-text-shadow: 1px 2px 4px white;
+    -ms-text-shadow: 1px 2px 4px white;
+    -o-text-shadow: 1px 2px 4px white;
     text-shadow: 1px 2px 4px white;
 }
 footer > .icons > li > a {
     color: #4a4a4a;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
     transition: .3s linear;
 }
 footer  >.icons > li > a:hover {
@@ -150,6 +240,10 @@ footer > p {
     line-height: 50px;
     right: 0;
     top: 90%;
+    -webkit-transform: translateY(-90%);
+    -moz-transform: translateY(-90%);
+    -ms-transform: translateY(-90%);
+    -o-transform: translateY(-90%);
     transform: translateY(-90%);
 }
 @media screen and (max-width: 500px) {

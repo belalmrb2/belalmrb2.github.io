@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background: #eee;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb {
+/*    width: 100px;*/
+    height: 50px;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.breadcrumb > li {
+    float: left;
+/*    width: 50%;*/
+/*    height: 100%;*/
+}
+.breadcrumb > li > a {
+    text-decoration: none;
+    color: #007fe0;
+    padding-right: 3px;
+}
+.active {
+    padding-left: 5px;
+}
