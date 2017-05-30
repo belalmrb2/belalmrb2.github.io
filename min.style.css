@@ -72,7 +72,7 @@ body {
     position: absolute;
     width: 250px;
     top: 90%;
-    left: -40%;
+    left: -100%;
     transform: translateY(-90%);
     text-align: center;
     line-height: 50px;
@@ -151,4 +151,9 @@ footer > p {
     right: 0;
     top: 90%;
     transform: translateY(-90%);
+}
+@media screen and (max-width: 500px) {
+    .cover {
+        width: 100%;
+    }
 }
