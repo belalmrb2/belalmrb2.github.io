@@ -8,7 +8,10 @@
 /*    for btn*/
 .btn {
     position: absolute;
-    padding: 15px;
+/*     padding: 15px; */
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
     display: block;
     text-decoration: none;
     -webkit-border-radius: 5px;
