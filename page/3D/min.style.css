@@ -90,6 +90,7 @@ body {
     transition: .5s;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 .container > .example:hover:before {
     width: 100%;
@@ -103,7 +104,20 @@ body {
     transition: .5s;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1;
 }
 .container > .example:hover:after {
     height: 100%;
+}
+.btn_example_download {
+    top: 50%;left: 40%; transform: translate(-40%, -50%) scale(0); z-index: 2;
+}
+.btn_example_demo {
+    top: 50%;left: 60%; transform: translate(-60%, -50%) scale(0); z-index: 2;
+}
+.container > .example:hover .btn_example_download {
+    transform: translate(-50%, -50%) scale(1);
+}
+.container > .example:hover .btn_example_demo{
+    transform: translate(-50%, -50%) scale(1);
 }
