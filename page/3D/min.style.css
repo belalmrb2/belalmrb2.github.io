@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 0;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 .breadcrumb {
     width: 100px;
     height: 50px;
@@ -41,7 +45,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    width: 85%;
+    width: 75%;
     height: 600px;
     background: white;
     position: relative;
@@ -49,11 +53,10 @@ body {
     box-shadow: 0 20px 40px -20px rgba(0, 127, 224, 0.32)
 }
 .container > .header {
-    width: 79.8%;
+    width: 99.2%;
     height: 5%;
-    border: 1px solid #ccc;
-    border-bottom: none;
-    border-top: none;
+    border-left: 4px solid #ccc;
+    border-right: 4px solid #ccc;
     line-height: 30px;
     color: #4a4a4a;
     position: relative;
@@ -71,7 +74,7 @@ body {
     padding-right: 5px;
 }
 .container > .example {
-    width: 80%;
+    width: 100%;
     background: orangered;
     height: 95%;
     float: left;
@@ -110,14 +113,120 @@ body {
     height: 100%;
 }
 .btn_example_download {
-    top: 50%;left: 40%; transform: translate(-40%, -50%) scale(0); z-index: 2;
+    top: 40%; left: 40%; transform: translate(-40%, -40%) scale(0); z-index: 2; transition: .5s; opacity: 0;
 }
 .btn_example_demo {
-    top: 50%;left: 60%; transform: translate(-60%, -50%) scale(0); z-index: 2;
+    top: 40%; left: 60%; transform: translate(-60%, -40%) scale(0); z-index: 2; transition: .5s; opacity: 0;
 }
 .container > .example:hover .btn_example_download {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1); opacity: 1;
 }
 .container > .example:hover .btn_example_demo{
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1); opacity: 1;
+}
+.container > .example > .percent {
+    width: 50%;
+    height: 40%;
+    background: rgba(239, 239, 244, 0.82);
+    border-left: 8px solid #898989;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%) scale(0);
+    z-index: 2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    transition: .5s
+}
+.container > .example:hover .percent {
+    transform: translate(-50%, -90%) scale(1);
+}
+.container > .example > .percent > .percent-nav {
+    width: 100%;
+    height: 24px;
+    border-bottom: 1px solid #a2a2a2;
+    line-height: 24px;
+}
+.container > .example > .percent > .percent-nav > .percent-nav-css {
+    width: 50px;
+    text-align: right;
+    position: relative;
+    padding: 0 20px;
+    margin-left: 5px
+}
+.container > .example > .percent > .percent-nav > .percent-nav-html {
+    width: 50px;
+    text-align: right;
+    position: relative;
+    padding: 0 20px;
+}
+.container > .example > .percent > .percent-nav > .percent-nav-javscript {
+    width: 50px;
+    text-align: right;
+    position: relative;
+    padding: 0 20px;
+}
+.container > .example > .percent > .percent-nav > .percent-nav-css:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #007fe0;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 2%;
+    transform: translate(-2%, -50%);
+}
+.container > .example > .percent > .percent-nav > .percent-nav-html:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #fc2121;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 2%;
+    transform: translate(-2%, -50%);
+}
+.container > .example > .percent > .percent-nav > .percent-nav-javscript:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #f2d50a;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 2%;
+    transform: translate(-2%, -50%);
+}
+.container > .example > .percent > .percent-percent {
+    width: 85%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+.container > .example > .percent > .percent-percent > .percent-percent-html {
+    width: 100%;
+    height: 20px;
+    background: #fc2121;
+    box-shadow: 0 4px 20px -4px #fc2121;
+    margin-top: 20px;
+    animation: percent 1s linear ;
+}
+.container > .example > .percent > .percent-percent > .percent-percent-css {
+    width: 80%;
+    height: 20px;
+    background: #007fe0;
+    box-shadow: 0 4px 20px -4px #007fe0;
+    margin-top: 20px;
+}
+.container > .example > .percent > .percent-percent > .percent-percent-javscript {
+    width: 0%;
+    height: 20px;
+    background: #f2d50a;
+    box-shadow: 0 4px 20px -4px #f2d50a;
+    margin-top: 20px;
 }

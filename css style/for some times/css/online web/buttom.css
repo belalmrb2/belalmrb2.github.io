@@ -18,7 +18,7 @@
     font-size: 20px;
     font-family: sans-serif;
     border: 2px solid transparent;
-    cursor: pointer;
+/*    cursor: pointer;*/
     background: none;
 }
 /*    shadow for text in btn*/
@@ -1042,7 +1042,7 @@
     font-size: 20px;
     font-family: sans-serif;
     border: 2px solid transparent;
-    cursor: pointer;
+/*    cursor: pointer;*/
     background: none;
     overflow: hidden;
 }
