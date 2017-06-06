@@ -243,3 +243,66 @@ a {
 .percent-percent-javscript:hover {
     padding-left: 5px;
 }
+
+
+
+
+.aside-menu {
+    width: 315px;
+    height: 667px;
+    background: white;
+    float: right;
+}
+.aside-menu > .aside_menu_header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    background: #3E3E3E;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif; 
+}
+.aside-menu > .aside_menu_header > span {
+    opacity: .9;
+}
+.aside-menu > .aside_menu_item {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background: black;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif; 
+}
+.aside-menu > .aside_menu_item > img {
+    width: 100%;
+}
+.aside-menu > .aside_menu_item > span {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%, -50%); /* 15% left / 50% top */
+    opacity: .8;
+}
+.aside-menu > .aside_menu_item > .nummber_item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(204, 204, 204, 0.28);
+    background: rgba(0, 0, 0, 0.23);
+    color: #00FF33;
+    text-align: center;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.aside-menu > .aside_menu_item > i {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%); /* 50% left / 90% top */
+}
