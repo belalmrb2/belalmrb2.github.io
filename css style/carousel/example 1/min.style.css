@@ -765,3 +765,13 @@ li.drop { display: inline-block;}
     font-size: 1.1em;
     font-family: 'Rajdhani', sans-serif;
 }
+@media (min-width: 550px) {
+    .content > .carousel > .iphone {
+        transform: skewX(0);
+        width: 80%;
+    }
+    .content > .carousel > .text { display: none;}
+    .content > .carousel > .iphone > .cover {
+        transform: translateY(-50%) skewX(0);
+    }
+}
