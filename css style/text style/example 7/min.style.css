@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-family: verdana;
+}
+h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 8em;
+	color: #4a4a4a;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+h1:before {
+	content: attr(data-title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	height: 50%;
+	overflow: hidden;
+}
+h1:after {
+	content: attr(data-title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #4a4a4a;
+	height: 50%;
+	overflow: hidden;
+	transition: .5s;
+	border-bottom: 0px solid #f00;
+}
+h1:hover:after {
+	border-bottom: 20px solid #ff0;
+	top: -20px;
+}
