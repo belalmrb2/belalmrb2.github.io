@@ -196,7 +196,7 @@ nav > .btn-BE-Lgin > a:before {
 .btn-lang:hover a {
     color: white;
 }
-.btn-lang > a:before {
+.btn-lang:after {
     content: '\f3d3';
     font-family:"Ionicons";
     margin-left: 190px;
