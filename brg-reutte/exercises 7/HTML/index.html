@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>
 <nav>
@@ -30,6 +32,7 @@
     </ul>
     <div class="btn-BE-Lgin"><a href="#">BE-Lgin</a></div>
 </nav>
+<div class="container">
     <div class="content-left">
         <div class="btn-lang"><a href="#">Kalender</a></div>
         <div class="btn-lang"><a href="#">Login</a></div>
@@ -48,29 +51,109 @@
             </div>
         </div>
     </div>
-    <div class="content-between"></div>
+    <div class="content-between">
+        <div class="carousel">
+            <img src="image/carousel%201.jpeg" width="100%" height="100%">
+            <h3>First window in carousel</h3>
+            <div class="carousel-item">
+                <div class="text-carousel">
+                    <p>No matter the task, the new iPad Pro is up to it — and then some. It offers far more power than most PC laptops, yet is delightfully simple to use. The redesigned Retina display is as stunning to look at as it is to touch. And it all comes together with iOS, the world’s most advanced mobile operating system. iPad Pro. Everything you want modern computing to be. Now even, well, better.</p>
+                </div>
+                <button>Herunterladen</button>
+                <button>zum Bericht</button>
+            </div>
+        </div>
+        
+        <div class="carousel">
+            <img src="image/carousel%202.jpg" width="100%" height="100%">
+            <h3>Second window in carousel</h3>
+            <div class="carousel-item">
+                <div class="text-carousel">
+                    <p>No matter the task, the new iPad Pro is up to it — and then some. It offers far more power than most PC laptops, yet is delightfully simple to use. The redesigned Retina display is as stunning to look at as it is to touch. And it all comes together with iOS, the world’s most advanced mobile operating system. iPad Pro. Everything you want modern computing to be. Now even, well, better.</p>
+                </div>
+                <button>Herunterladen</button>
+                <button>zum Bericht</button>
+            </div>
+        </div>
+        
+        <div class="carousel">
+            <img src="image/carousel%203.jpg" width="100%" height="100%">
+            <h3>Third window in carousel</h3>
+            <div class="carousel-item">
+                <div class="text-carousel">
+                    <p>No matter the task, the new iPad Pro is up to it — and then some. It offers far more power than most PC laptops, yet is delightfully simple to use. The redesigned Retina display is as stunning to look at as it is to touch. And it all comes together with iOS, the world’s most advanced mobile operating system. iPad Pro. Everything you want modern computing to be. Now even, well, better.</p>
+                </div>
+                <button>Herunterladen</button>
+                <button>zum Bericht</button>
+            </div>
+        </div>
+        
+        <div class="carousel">
+            <img src="image/carousel%204.jpg" width="100%" height="100%">
+            <h3>Third window in carousel</h3>
+            <div class="carousel-item">
+                <div class="text-carousel">
+                    <p>No matter the task, the new iPad Pro is up to it — and then some. It offers far more power than most PC laptops, yet is delightfully simple to use. The redesigned Retina display is as stunning to look at as it is to touch. And it all comes together with iOS, the world’s most advanced mobile operating system. iPad Pro. Everything you want modern computing to be. Now even, well, better.</p>
+                </div>
+                <button>Herunterladen</button>
+                <button>zum Bericht</button>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>  
+            <span class="dot"></span> 
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </div>
     <div class="content-right"></div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("carousel");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 3 seconds
+}
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

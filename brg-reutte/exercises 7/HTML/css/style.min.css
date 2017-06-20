@@ -1,10 +1,10 @@
-body {
-    background: ;
+html,body {
+    background: #eee;
     margin: 0;
 }
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;box-sizing:border-box;
 }
 .menu {
     padding: 0;
@@ -23,12 +23,26 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 20px 14px;
+    padding: 22.5px 14px;
     transition: .3s linear;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 .menu > li > a:hover {
     color: #eaeaea;
+}
+.menu > li > a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: white;
+    bottom: 0;
+    left: 0;
+    transition: height .3s ease-in;
+}
+.menu > li > a:hover:before {
+    height: 5px;
 }
 nav {
     position: relative;
@@ -154,6 +168,11 @@ nav > .btn-BE-Lgin > a:before {
     }
 }
 /* style content on body */
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .content-left {
     width: 20%;
     height: 650px;
@@ -236,16 +255,138 @@ nav > .btn-BE-Lgin > a:before {
     border-radius: 5px;
     font-size: 22px;
     border: none;
+    border: 2px solid #3A95EF;
+    transition: background .3s linear, color .5s ease-in-out;
+}
+.news-container > .news-item > button:hover {
+    background: none;
+    color: #3A95EF;
 }
 .content-between {
     width: 60%;
     height: 650px;
-    background: #a02626;
-    float: left;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+/*    float: left;*/
+    position: relative;
+}
+.carousel {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    animation: carousel 1s ease-in-out both;
+}
+@keyframes carousel {
+    0% {
+        opacity: 0;
+        top: -40%;
+        transform: scale(.8) skewX(5deg)
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+        transform: scale(1) skewX(0)
+    }
+}
+.carousel > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.carousel > h3 {
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel > .carousel-item {
+    width: 500px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.50);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: .5s
+}
+.carousel > .carousel-item:hover {
+    box-shadow: 0 20px 40px -20px rgba(255, 255, 255, 0.2);
+    top: 48%;
+    transform:translate(-50%, -50%) scale(1.1);
+}
+.carousel > .carousel-item > .text-carousel {
+    padding: 2em;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 28px;
+}
+.carousel > .carousel-item > button {
+    padding: 15px 20px;
+    border: 2px solid #3A95EF;
+    border-radius: 5px;
+    background: none;
+    color: #e2e2e2;
+    background: rgba(0, 0, 0, 0.13);
+    font-size: 1.1em;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px #4a4a4a;
+    left: 20%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.carousel > .carousel-item > button:hover {
+    color: #ffffff;
+    text-shadow: 1px 2px 4px #4a4a4a;
+}
+.carousel > .carousel-item > button:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 149, 239, 0.56);
+    top: 0;
+    left: 110%;
+    transform: skew(-20deg);
+    transition: .5s;
+    z-index: -2;
+}
+.carousel > .carousel-item > button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 128, 255);
+    top: 0;
+    left: -110%;
+    transform: skew(20deg);
+    transition: .5s;
+    z-index: -1;
+}
+.carousel > .carousel-item > button:hover:before {
+    left: 0;
+}
+.carousel > .carousel-item > button:hover:after {
+    left: 0;
+}
+.dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: rgba(187, 187, 187, 0.53);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: 580px    
+}
+.active {
+  background-color: rgba(113, 113, 113, 0.66);
 }
 .content-right {
     width: 20%;
     height: 650px;
     background: #C3D4F2;
-    float: left;
 }
