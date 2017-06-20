@@ -215,11 +215,11 @@ nav > .btn-BE-Lgin > a:before {
 .btn-lang:hover a {
     color: white;
 }
-.btn-lang > a:before {
-    content: '\f3d3';
-    font-family:"Ionicons";
-    margin-left: 190px;
+.btn-lang > i {
     position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
 }
 .news-container {
     width: 90%;
@@ -389,4 +389,9 @@ nav > .btn-BE-Lgin > a:before {
     width: 20%;
     height: 650px;
     background: #C3D4F2;
+<<<<<<< HEAD
 }
+=======
+    float: left;
+}
+>>>>>>> e932946bb3525434e2bd19b43e6c21d52af19571
