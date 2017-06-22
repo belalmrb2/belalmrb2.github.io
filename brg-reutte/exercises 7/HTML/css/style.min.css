@@ -14,7 +14,6 @@ html,body {
     background: #3176BA;
     list-style-type: none;
     line-height: 65px;
-    z-index: 5;
 }
 .menu > li {
     float: left;
@@ -221,6 +220,7 @@ nav > .btn-BE-Lgin > a:before {
     top: 50%;
     left: 80%;
     transform: translate(-80%, -50%);
+    transition: color .6s ease-in-out
 }
 .btn-lang:hover i {
     color: white;
