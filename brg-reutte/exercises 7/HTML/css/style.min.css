@@ -140,9 +140,13 @@ nav > .btn-BE-Lgin > a:before {
         text-align: center;
         width: 100%;
         display: none;
+<<<<<<< HEAD
         background: none;
         position: relative;
         z-index: 10;
+=======
+        background: white;
+>>>>>>> 76e504441fe2cb82c11d1fdb1eac5fa3f2bec023
     }
     .menu li {
         float: inherit;
@@ -223,6 +227,10 @@ nav > .btn-BE-Lgin > a:before {
     top: 50%;
     left: 80%;
     transform: translate(-80%, -50%);
+    transition: color .6s ease-in-out
+}
+.btn-lang:hover i {
+    color: white;
 }
 .news-container {
     width: 90%;
