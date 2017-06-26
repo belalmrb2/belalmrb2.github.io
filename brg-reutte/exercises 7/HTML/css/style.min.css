@@ -141,12 +141,15 @@ nav > .btn-BE-Lgin > a:before {
         width: 100%;
         display: none;
         background: none;
+        position: relative;
+        z-index: 10;
     }
     .menu li {
         float: inherit;
         position: relative;
         left: -100%;
         animation: menu_animation .5s linear both;
+        background: white;
     }
     .menu li:first-child {
         padding-top: 20px;
@@ -389,9 +392,192 @@ nav > .btn-BE-Lgin > a:before {
     width: 20%;
     height: 650px;
     background: #C3D4F2;
-<<<<<<< HEAD
+    position: relative
 }
-=======
-    float: left;
+.content-right > .kalender {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    background: white;
+    background: url(../image/kalernder.png);
+    background-size: 100% 100%;
 }
->>>>>>> e932946bb3525434e2bd19b43e6c21d52af19571
+.content-right > .btn-supplierplan,
+.content-right > .btn-moodle,
+.content-right > .btn-schulbibliothek,
+.content-right > .btn-webmail {
+    width: 90%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.42);
+    border: 2px solid #3A95EF;
+    border-radius: 4px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+.content-right > .btn-supplierplan:before {
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../image/untismobile.png');
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.51);
+    transition: .5s;
+}
+.content-right > .btn-supplierplan > a,
+.content-right > .btn-moodle > a,
+.content-right > .btn-schulbibliothek  > a,
+.content-right > .btn-webmail  > a {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    color: #4a4a4a;
+}
+.btn-supplierplan:hover:before {
+    width: 100%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.42);
+}
+.content-right > .btn-moodle:before {
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../image/moodle1600.png');
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.51);
+    transition: .5s;
+}
+.btn-moodle:hover:before {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.42);
+}
+.content-right > .btn-schulbibliothek:before {
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../image/biblio.png');
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.51);
+    transition: .5s;
+}
+.btn-schulbibliothek:hover:before {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.42);
+}
+.content-right > .btn-webmail:before {
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../image/webmail.jpg');
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.51);
+    transition: .5s;
+}
+.btn-webmail:hover:before {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.42);
+}
+
+
+/* ======================================== */
+.second-container {
+    width: 100%;
+    height: 400px;
+    background: #07031A;
+}
+.second-container > h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    padding-top: 20px;
+}
+.second-container > .gallery-image-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.second-container > .gallery-image-box > .gallery-image {
+    width: 300px;
+    height: 260px;
+    background: white;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+}
+.footer-logo {
+    width: 100%;
+    height: 500px;
+    background: #10083c;
+}
+.footer-logo > .logo-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 50px;
+}
+.footer-logo > .logo-box > .image-logo {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+footer {
+    width: 80%;
+    height: 300px;
+    background: #eee;
+    margin: auto;
+}
+footer > .footer-left {
+    width: 200px;
+    height: 300px;
+    color: #4a4a4a;
+    padding-top: 5em;
+}
+footer > .footer-left > p > a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1100px) {
+    .container {
+        position: absolute;
+    }
+    .content-left {
+        width: 30%;
+    }
+    .content-between {
+        width: 70%;
+    }
+    .content-right {
+        width: 50%;
+    }
+    .second-container {
+        width: 50%;
+        position: relative;
+        top: 650px;
+        float: right;
+    }
+}
