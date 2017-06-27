@@ -13,34 +13,137 @@ a {
 .container {
     width: 100%;
     height: 700px;
-    background: url('background%20image%20for%20firat%20page%20on%20the%20web.jpg');
+    background: url('background image for firat page on the web.jpg');
     background-size: cover;
     position: relative;
     overflow: hidden;
 }
 .container > .menu {
     width: 100%;
-    height: 80px;
-    background: #ffffff;
-    position: fixed;
+    height: 60px;
+    background: #fff;
+    position: absolute;
+    box-shadow: 0px 4px 30px -15px rgba(0, 0, 0, 0.42);
 }
 .container > .menu > li {
     float: left;
     list-style-type: none;
-    line-height: 80px;
+    line-height: 60px;
 }
 .container > .menu > li > a {
-    padding: 33px 20px;
+    padding: 20px 20px;
     color: #4a4a4a;
     font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    transition: .3s ease-in-out;
+}
+.container > .menu > li > a:hover { color: #747474;}
+.down{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+.down a {
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    min-width: 160px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px auto;
+    border-radius: 4px;
+    line-height: 50px;
+    position: relative;
+    transition: .1s linear;
+}
+.down a:hover {
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+.drop:hover .down {
+    display: block;
+}
+.down a:nth-child(3) {
+    animation-delay: 5s
+}
+.drop:hover .down a{
+    display: block;
+    animation: bounceInLeft 1s linear both;
+}
+.menu_label {
+    margin: 0 10px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .menu_label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 50px auto;
+    }
+    .menu li {
+        width: 100%;
+        height: 50px;
+        float: none;
+        background: white;
+        border-bottom: 1px solid #ccc;
+    }
+    .menu li a {
+        line-height: 40px
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
 }
 .container > h3 {
     width: 80%;
     text-align: center;
     font-size: 1.5em;
-    color: #ffffff;
+    color: #fff;
     text-shadow: 1px 2px 4px #4a4a4a;
-    position: absolute;
+    position: relative;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -35%);
