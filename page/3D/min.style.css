@@ -10,7 +10,7 @@ html, body {
 a {
     text-decoration: none;
 }
-.container {
+div.container {
     width: 100%;
     height: 700px;
     background: url('background image for firat page on the web.jpg');
@@ -245,4 +245,141 @@ a {
     .container > .button-box > button {
         margin: none;
     }
+}
+section.container {
+    padding: 4.5em;
+    position: relative;
+}
+.example-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.content {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.content:hover .image {
+    transform: rotateY(180deg);
+}
+.image {
+    position: relative;
+    transition: .5s;
+    transform-style: preserve-3d;
+}
+.content > img {
+    vertical-align: middle;
+}
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.info > .info-header {
+    width: 100%;
+    height: 35%;
+    background: white;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.info > .info-header > .info-data-time {
+    width: 80px;
+    height: 15px;
+    position: relative;
+    top: 4px;
+    left: 5px;
+    color: #2a5b71;
+    z-index: 2;
+}
+.info > .info-header > .info-data-time > i {
+    z-index: -1;
+}
+.info > .info-header > .info-data-time > span {
+    position: absolute;
+    background: #e8e8e8;
+    font-size: 0px;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    border-radius: 0px 20px 20px 0px;
+    width: 0px;
+    height: 12px;
+    line-height: 12px;
+    color: #4B4B4B;
+    text-align: center;
+    z-index: -1;
+    transition: .3s linear
+}
+.info > .info-header > .info-data-time:hover span {
+    width: 55px;
+    font-size: 10px;
+}
+.info > .info-header > h3 {
+    color: darkgrey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+}
+.info > .info-header > .icons {
+    width: 30px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+}
+.info > .info-header > .icons > li {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 23px;
+}
+.info > .info-header > .icons > li:nth-child(1) > a {color: #FD3D39;}
+.info > .info-header > .icons > li:nth-child(2) > a {color: #515151;}
+.info > .info-header > .icons > li:nth-child(3) > a {color: #10EE3D;}
+.info > .info-header > .icons > li:nth-child(4) > a {color: #23AFE4;}
+.info > .info-between {
+    width: 100%;
+    height: 50%;
+}
+.info > .info-between > img{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.info > .btn-github {
+    width: 99%;
+    height: 15%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    color: white;
+    background: deepskyblue;
+    border: 2px solid transparent;
+    transition: .3s linear;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.info > .btn-github:hover {
+    background: #4a4a4a;
+    border: 2px solid deepskyblue;
+}
+img, .info {
+    border: 4px double #ccc;
+    width: 300px;
+    height: 400px;
+    backface-visibility: hidden;
 }

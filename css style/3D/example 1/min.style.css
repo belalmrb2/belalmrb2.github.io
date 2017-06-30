@@ -23,38 +23,35 @@ h1 {
     position: absolute;
     width: 400px;
     height: 400px;
-    opacity: 0.8;
 /*    border: 5px solid #4a4a4a;*/
 }
 #front {
     transform: translateZ(200px);
-    background: black;
+    background: #3498db;
 }
 #back {
     transform: rotateY(180deg) translateZ(200px);
-    background: #101010
+    background: #2ecc71;
 }
 #left {
     transform: rotateY(-90deg) translateX(-200px);
     transform-origin: left;
-    background: black;
+    background: #e74c3c;
 }
 #right {
     transform: rotateY(90deg) translateX(200px);
     transform-origin: right;
-    background: #101010;
+    background: #8e44ad;
 }
 #top {
     transform: rotateX(-90deg) translateY(-200px);
     transform-origin: top;
-    background: deepskyblue;
+    background: #34495e;
 }
 #bottom {
     transform: rotateX(90deg) translateY(200px);
     transform-origin: bottom;
-/*    background: #101010;*/
-    background: url('image%201.jpg');
-    background-size: cover;
+    background: #ecf0f1;
 }
 
 @keyframes rotate {
