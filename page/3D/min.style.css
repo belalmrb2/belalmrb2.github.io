@@ -262,7 +262,7 @@ section.container {
     perspective: 1000px;
     cursor: pointer;
     margin: 20px auto;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 .content:hover .image {
     transform: rotateY(180deg);
